@@ -16,10 +16,15 @@ namespace Addressbook
         /// </summary>
         public void DisplayAddressBook()
         {
-            Console.WriteLine("\nDisplaying Contacts - \nFirst Name\tLast Name\tAddress\tCity\tState\tZIP Code\tPhone Number\tEmailId");
-            foreach (Contact contact in addressBook)
+            if (addressBook.Count == 0)
+                Console.WriteLine("No Contacts to display");
+            else
             {
-                Console.WriteLine(contact.firstName + "\t\t" + contact.lastName + "\t\t" + contact.address + "\t" + contact.city + "\t" + contact.state + "\t" + contact.zip + "\t\t" + contact.phoneNo + "\t\t" + contact.email);
+                Console.WriteLine("\nDisplaying Contacts - \nFirst Name\tLast Name\tAddress\tCity\tState\tZIP Code\tPhone Number\tEmailId");
+                foreach (Contact contact in addressBook)
+                {
+                    Console.WriteLine(contact.firstName + "\t\t" + contact.lastName + "\t\t" + contact.address + "\t" + contact.city + "\t" + contact.state + "\t" + contact.zip + "\t\t" + contact.phoneNo + "\t\t" + contact.email);
+                }
             }
         }
 
@@ -78,5 +83,8 @@ namespace Addressbook
                 Console.WriteLine("Name not Found");
             }
         }
+
+
+        public void Delete Contact()
     }
 }

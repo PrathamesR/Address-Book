@@ -6,8 +6,47 @@ using System.Threading.Tasks;
 
 namespace Addressbook
 {
-    class AddressBook
+    public class AddressBook
     {
         SortedSet<Contact> addressBook = new SortedSet<Contact>(new ContactComparer());
+
+
+        /// <summary>
+        /// Displays All Contact in the AdressBook
+        /// </summary>
+        public void DisplayAddressBook()
+        {
+            Console.WriteLine("\nDisplaying Contacts - \nFirst Name\tLast Name\tAddress\tCity\tState\tZIP Code\tPhone Number\tEmailId");
+            foreach (Contact contact in addressBook)
+            {
+                Console.WriteLine(contact.firstName + "\t\t" + contact.lastName + "\t\t" + contact.address + "\t" + contact.city + "\t" + contact.state + "\t" + contact.zip + "\t\t" + contact.phoneNo + "\t\t" + contact.email);
+            }
+        }
+
+        /// <summary>
+        /// Adds New Contact to the Address Book
+        /// </summary>
+        public void AddNewContact()
+        {
+            Contact contact = new Contact();
+            Console.Write("Enter First Name: ");
+            contact.firstName = Console.ReadLine();
+            Console.Write("Enter Last Name: ");
+            contact.lastName = Console.ReadLine();
+            Console.Write("Enter Address:");
+            contact.address = Console.ReadLine();
+            Console.Write("Enter City: ");
+            contact.city = Console.ReadLine();
+            Console.Write("Enter State: ");
+            contact.state = Console.ReadLine();
+            Console.Write("Enter ZIP Code: ");
+            contact.zip = int.Parse(Console.ReadLine());
+            Console.Write("Enter Phone Number: ");
+            contact.phoneNo = double.Parse(Console.ReadLine());
+            Console.Write("Enter Email Id: ");
+            contact.email = Console.ReadLine();
+
+            addressBook.Add(contact);
+        }
     }
 }

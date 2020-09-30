@@ -10,9 +10,10 @@ namespace Addressbook
     {
         public int Compare(Contact x, Contact y)
         {
-            return string.Compare(x.firstName+x.lastName, y.firstName+y.lastName);
+            return string.Compare(x.firstName + x.lastName, y.firstName + y.lastName);
         }
     }
+
 
     public class Contact
     {
@@ -24,6 +25,11 @@ namespace Addressbook
         public int zip { get; set; }
         public double phoneNo { get; set; }
         public string email { get; set; }
+
+        public Contact()
+        {
+
+        }
 
         public Contact(string firstName, string lastName, string address, string city, string state, int zip, double phoneNo, string email)
         {

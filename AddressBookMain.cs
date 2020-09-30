@@ -17,6 +17,9 @@ namespace Addressbook
             addressbook.AddNewContact();
             addressbook.DisplayAddressBook();
 
+            //UseCase3
+            addressbook.EditContact();
+            addressbook.DisplayAddressBook();
 
             //Temp Read to view Console
             Console.Read();

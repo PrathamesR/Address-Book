@@ -47,6 +47,36 @@ namespace Addressbook
             contact.email = Console.ReadLine();
 
             addressBook.Add(contact);
+            Console.WriteLine("New Contact added successfully");
+        }
+
+        /// <summary>
+        /// Edits the contact.
+        /// </summary>
+        public void EditContact()
+        {
+            Console.Write("\nEnter the name of the contact to edit: ");
+            string name = Console.ReadLine();
+
+            Contact contact=null;
+            IEnumerator<Contact> itr = addressBook.GetEnumerator();
+            while(itr.MoveNext())
+            {
+                contact = itr.Current as Contact;
+                if (contact.firstName == name)
+                    break;
+            }
+
+            if(name==contact.firstName)
+            {
+                Console.Write("Enter the new Name:");
+                contact.firstName = Console.ReadLine();
+                Console.WriteLine("Name changed Successfully");
+            }
+            else
+            {
+                Console.WriteLine("Name not Found");
+            }
         }
     }
 }

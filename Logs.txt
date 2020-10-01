@@ -1,0 +1,28 @@
+﻿2020-10-01 10:15:50.3318|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-01 10:15:52.0502|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-01 10:16:09.7769|INFO|Addressbook.AddressBook|Added New contact abc def
+2020-10-01 10:16:12.0267|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-01 10:16:12.0267|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-01 10:16:14.7143|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-01 10:16:26.4604|INFO|Addressbook.AddressBook|Added New contact sfsf vxvfs
+2020-10-01 10:16:31.1453|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-01 10:16:31.1453|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-01 10:16:33.5800|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-01 10:16:40.3281|INFO|Addressbook.AddressBook|Edited name sfsf to nice name
+2020-10-01 10:16:46.5941|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-01 10:16:46.6011|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-01 10:16:48.4784|INFO|Addressbook.AddressBookMain|Deleting contacts
+2020-10-01 10:16:50.9300|INFO|Addressbook.AddressBook|Deleted Contact
+2020-10-01 10:16:55.5131|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-01 10:16:55.5131|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-01 10:16:57.1639|INFO|Addressbook.AddressBookMain|Deleting contacts
+2020-10-01 10:16:58.7068|WARN|Addressbook.AddressBook|Name haha not present in addressbook
+2020-10-01 10:17:07.2871|WARN|Addressbook.AddressBookMain|Invalid Input
+2020-10-01 10:17:08.7166|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-01 10:41:20.0738|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-01 10:41:23.3906|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-01 10:47:40.5450|ERROR|Addressbook.AddressBookMain|Input string was not in a correct format.
+2020-10-01 10:49:17.9777|ERROR|Addressbook.AddressBookMain|   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Addressbook.AddressBookMain.Main(String[] args) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 25Input string was not in a correct format.

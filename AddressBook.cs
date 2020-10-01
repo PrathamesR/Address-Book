@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using NLog;
 namespace Addressbook
 {
     public class AddressBook
     {
         SortedSet<Contact> addressBook = new SortedSet<Contact>(new ContactComparer());
-
+        Logger logger = LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Displays All Contact in the AdressBook
@@ -25,6 +25,7 @@ namespace Addressbook
                 {
                     Console.WriteLine(contact.firstName + "\t\t" + contact.lastName + "\t\t" + contact.address + "\t" + contact.city + "\t" + contact.state + "\t" + contact.zip + "\t\t" + contact.phoneNo + "\t\t" + contact.email);
                 }
+                logger.Info("Displayed Contacts Successfully");
             }
         }
 
@@ -53,6 +54,7 @@ namespace Addressbook
 
             addressBook.Add(contact);
             Console.WriteLine("New Contact added successfully");
+            logger.Info("Added New contact "+contact.firstName+" "+contact.lastName);
         }
 
         /// <summary>
@@ -77,9 +79,11 @@ namespace Addressbook
                 Console.Write("Enter the new Name:");
                 contact.firstName = Console.ReadLine();
                 Console.WriteLine("Name changed Successfully");
+                logger.Info("Edited name "+name+" to " +contact.firstName);
             }
             else
             {
+                logger.Warn("Name " + name + " not present in addressbook");
                 Console.WriteLine("Name not Found");
             }
         }
@@ -103,9 +107,11 @@ namespace Addressbook
             {
                 addressBook.Remove(contact);
                 Console.WriteLine("Contact Deleted Successfully");
+                logger.Info("Deleted Contact");
             }
             else
             {
+                logger.Warn("Name " + name + " not present in addressbook");
                 Console.WriteLine("Name not Found");
             }
 

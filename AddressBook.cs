@@ -85,6 +85,31 @@ namespace Addressbook
         }
 
 
-        public void Delete Contact()
+        public void DeleteContact()
+        {
+            Console.Write("\nEnter the name of the contact to delete: ");
+            string name = Console.ReadLine();
+
+            Contact contact = null;
+            IEnumerator<Contact> itr = addressBook.GetEnumerator();
+            while (itr.MoveNext())
+            {
+                contact = itr.Current as Contact;
+                if (contact.firstName == name)
+                    break;
+            }
+
+            if (name == contact.firstName)
+            {
+                Console.Write("Enter the new Name:");
+                addressBook.Remove(contact);
+                Console.WriteLine("Contact Deleted Successfully");
+            }
+            else
+            {
+                Console.WriteLine("Name not Found");
+            }
+
+        }
     }
 }

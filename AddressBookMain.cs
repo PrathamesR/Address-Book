@@ -21,6 +21,10 @@ namespace Addressbook
             addressbook.EditContact();
             addressbook.DisplayAddressBook();
 
+            //UseCase4
+            addressbook.DeleteContact();
+            addressbook.DisplayAddressBook();
+
             //Temp Read to view Console
             Console.Read();
         }

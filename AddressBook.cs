@@ -101,7 +101,6 @@ namespace Addressbook
 
             if (name == contact.firstName)
             {
-                Console.Write("Enter the new Name:");
                 addressBook.Remove(contact);
                 Console.WriteLine("Contact Deleted Successfully");
             }

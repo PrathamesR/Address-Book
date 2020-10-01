@@ -11,22 +11,38 @@ namespace Addressbook
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Address Book Problem");
-
-            //UseCase2
             AddressBook addressbook = new AddressBook();
-            addressbook.AddNewContact();
-            addressbook.DisplayAddressBook();
-
-            //UseCase3
-            addressbook.EditContact();
-            addressbook.DisplayAddressBook();
-
-            //UseCase4
-            addressbook.DeleteContact();
-            addressbook.DisplayAddressBook();
-
-            //Temp Read to view Console
-            Console.Read();
+            bool flag = true;
+            int choice;
+            while(flag)
+            {
+                Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Exit");
+                choice=int.Parse(Console.ReadLine());
+                if(choice==1)
+                {
+                    addressbook.DisplayAddressBook();
+                }
+                else if(choice==2)
+                {
+                    addressbook.AddNewContact();
+                }
+                else if(choice==3)
+                {
+                    addressbook.EditContact();
+                }
+                else if(choice==4)
+                {
+                    addressbook.DeleteContact();
+                }
+                else if(choice==5)
+                {
+                    flag = false;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Input");
+                }
+            }
         }
     }
 }

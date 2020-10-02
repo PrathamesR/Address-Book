@@ -26,3 +26,42 @@
    at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
    at System.Int32.Parse(String s)
    at Addressbook.AddressBookMain.Main(String[] args) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 25Input string was not in a correct format.
+2020-10-02 20:48:27.6383|ERROR|Addressbook.AddressBookMain|   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Addressbook.AddressBookMain.Main(String[] args) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 25Input string was not in a correct format.
+2020-10-02 20:48:41.1471|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 20:48:43.9418|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 20:48:51.4126|INFO|Addressbook.AddressBook|Added New contact asdf asdf
+2020-10-02 20:48:54.1040|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 20:48:54.1040|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-02 20:48:56.1581|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 20:51:45.2411|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 20:51:58.5212|INFO|Addressbook.AddressBook|Added New contact pra tha
+2020-10-02 20:52:00.6553|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 20:52:12.9510|INFO|Addressbook.AddressBook|Added New contact sfd fds
+2020-10-02 20:52:16.0892|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 20:52:16.0892|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-02 20:52:17.9796|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 21:23:29.9167|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 21:23:34.3170|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 21:23:50.5059|INFO|Addressbook.AddressBook|Added New contact Pra tha
+2020-10-02 21:23:52.0418|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 21:23:52.0418|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-02 21:23:54.2896|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 21:40:21.0809|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 21:40:28.1884|INFO|Addressbook.AddressBook|Added New contact pra tha
+2020-10-02 21:40:29.7924|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 21:40:43.2938|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 21:40:43.2985|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-02 21:40:49.9846|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 21:41:05.6163|ERROR|Addressbook.AddressBookMain|   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at Addressbook.Contact.set_Item(String propName, Object value) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Contact.cs:line 59
+   at Addressbook.AddressBook.EditContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 87
+   at Addressbook.AddressBookMain.Main(String[] args) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 39Object of type 'System.String' cannot be converted to type 'System.Double'.

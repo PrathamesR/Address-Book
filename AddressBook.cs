@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NLog;
 namespace Addressbook
 {
+
     public class AddressBook
     {
         SortedSet<Contact> addressBook = new SortedSet<Contact>(new ContactComparer());
@@ -74,12 +75,17 @@ namespace Addressbook
                     break;
             }
 
+
             if(name==contact.firstName)
             {
-                Console.Write("Enter the new Name:");
-                contact.firstName = Console.ReadLine();
-                Console.WriteLine("Name changed Successfully");
-                logger.Info("Edited name "+name+" to " +contact.firstName);
+                Console.WriteLine("Select The property to edit");
+                Console.WriteLine("1.First Name\n2.Last Name\n3.Address\n4.City\n5.State\n6.ZIP Code\n7.Phone Number\n8.Email Address");
+                string[] properties = { "firstName", "lastName", "address", "city", "state", "zip", "phoneNo", "email" };
+                
+                int choice = int.Parse(Console.ReadLine());
+                Console.Write("Existing value : " + contact[properties[choice]]+"\t Enter New Value: ");
+                contact[properties[choice]] = (Console.ReadLine());
+                Console.WriteLine(properties[choice] + " edited succesfully");
             }
             else
             {

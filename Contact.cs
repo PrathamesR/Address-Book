@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace Addressbook
 {
@@ -41,6 +42,22 @@ namespace Addressbook
             this.zip = zip;
             this.phoneNo = phoneNo;
             this.email = email;
+        }
+
+        public object this[string propName]
+        {
+            get
+            {
+                Type type = GetType();
+                PropertyInfo propertyInfo = type.GetProperty(propName);
+                return propertyInfo.GetValue(this, null);
+            }
+            set
+            {
+                Type type = GetType();
+                PropertyInfo propertyInfo = type.GetProperty(propName);
+                propertyInfo.SetValue(this, value, null);
+            }
         }
     }
 }

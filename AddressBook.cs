@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
+using System.ComponentModel;
+
 namespace Addressbook
 {
 
@@ -84,7 +86,9 @@ namespace Addressbook
                 
                 int choice = int.Parse(Console.ReadLine());
                 Console.Write("Existing value : " + contact[properties[choice]]+"\t Enter New Value: ");
-                contact[properties[choice]] = (Console.ReadLine());
+                contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice]].GetType()).ConvertFrom(Console.ReadLine());
+
+
                 Console.WriteLine(properties[choice] + " edited succesfully");
             }
             else

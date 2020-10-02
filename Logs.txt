@@ -65,3 +65,20 @@
    at Addressbook.Contact.set_Item(String propName, Object value) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Contact.cs:line 59
    at Addressbook.AddressBook.EditContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 87
    at Addressbook.AddressBookMain.Main(String[] args) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 39Object of type 'System.String' cannot be converted to type 'System.Double'.
+2020-10-02 23:05:54.0795|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 23:06:02.3487|ERROR|Addressbook.AddressBookMain|   at System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Double.Parse(String s)
+   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 54
+   at Addressbook.AddressBookMain.Main(String[] args) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Input string was not in a correct format.
+2020-10-02 23:06:10.0050|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 23:06:11.9597|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 23:06:18.6043|INFO|Addressbook.AddressBook|Added New contact pra tha
+2020-10-02 23:06:21.0594|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 23:38:45.4670|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-02 23:38:54.3186|INFO|Addressbook.AddressBook|Added New contact pra ta
+2020-10-02 23:38:55.9993|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 23:39:01.8831|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 23:39:01.8831|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-02 23:39:19.6179|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-02 23:39:31.2037|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-02 23:39:31.2077|INFO|Addressbook.AddressBook|Displayed Contacts Successfully

@@ -7,21 +7,20 @@ using NLog;
 
 namespace Addressbook
 {
+
     class AddressBookMain
     {
-        static void Main(string[] args)
+        public static void UseAddressBook(AddressBook addressbook)
         {
             Logger nlog = LogManager.GetCurrentClassLogger();
 
-            try
+            bool flag = true;
+            int choice;
+            while (flag)
             {
-                Console.WriteLine("Welcome To Address Book Problem");
-                AddressBook addressbook = new AddressBook();
-                bool flag = true;
-                int choice;
-                while (flag)
+                try
                 {
-                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Exit");
+                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Close Address Book");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -45,7 +44,7 @@ namespace Addressbook
                     }
                     else if (choice == 5)
                     {
-                        nlog.Info("Exiting Program");
+                        nlog.Info("Changing Address Book");
                         flag = false;
                     }
                     else
@@ -54,12 +53,62 @@ namespace Addressbook
                         Console.WriteLine("Invalid Input");
                     }
                 }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Invalid data entered. Error:" + e.StackTrace + e.Message);
+                    nlog.Error(e.StackTrace + e.Message);
+                }
             }
-            catch(Exception e)
+
+        }
+
+        static void Main(string[] args)
+        {
+            Logger nlog = LogManager.GetCurrentClassLogger();
+
+            Console.WriteLine("Welcome To Address Book Problem");
+            Shelf shelf = new Shelf();
+            bool flag = true;
+            int choice;
+
+            while (flag)
             {
-                Console.WriteLine(e.StackTrace+e.Message);
-                nlog.Error(e.StackTrace+e.Message);
+                Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Exit");
+                choice = int.Parse(Console.ReadLine());
+                if (choice == 1)
+                {
+                    AddressBook addressBook = new AddressBook();
+                    Console.Write("\nEnter New Address Book's Name: ");
+                    string addressBookName = Console.ReadLine();
+                    shelf.AddNewAddressBook(addressBookName, addressBook);
+                    Console.WriteLine("Successfully created " + addressBookName + "\tUsing Address Book " + addressBookName + "...");
+                    UseAddressBook(addressBook);
+                }
+                else if (choice == 2)
+                {
+                    Console.Write("\nEnter Address Book's Name: ");
+                    string addressBookName = Console.ReadLine();
+                    AddressBook addressBook = shelf.GetAddressBook(addressBookName);
+                    if (addressBook!=null)
+                    {
+                        Console.WriteLine("Using Address Book " + addressBookName + "...");
+                        UseAddressBook(addressBook);
+                    }
+                    else
+                        Console.WriteLine("There is no Book with name "+ addressBookName);
+                }
+                else if (choice == 3)
+                {
+                    nlog.Info("Exiting Program");
+                    flag = false;
+                }
+                else
+                {
+                    nlog.Warn("Invalid Input");
+                    Console.WriteLine("Invalid Input");
+                }
             }
+
         }
     }
 }

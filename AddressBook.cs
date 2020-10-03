@@ -85,8 +85,8 @@ namespace Addressbook
                 string[] properties = { "firstName", "lastName", "address", "city", "state", "zip", "phoneNo", "email" };
                 
                 int choice = int.Parse(Console.ReadLine());
-                Console.Write("Existing value : " + contact[properties[choice]]+"\t Enter New Value: ");
-                contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice]].GetType()).ConvertFrom(Console.ReadLine());
+                Console.Write("Existing value : " + contact[properties[choice-1]]+"\t Enter New Value: ");
+                contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice-1]].GetType()).ConvertFrom(Console.ReadLine());
 
 
                 Console.WriteLine(properties[choice] + " edited succesfully");
@@ -98,7 +98,9 @@ namespace Addressbook
             }
         }
 
-
+        /// <summary>
+        /// Deletes the contact.
+        /// </summary>
         public void DeleteContact()
         {
             Console.Write("\nEnter the name of the contact to delete: ");

@@ -82,3 +82,61 @@
 2020-10-02 23:39:19.6179|INFO|Addressbook.AddressBookMain|Editing contacts
 2020-10-02 23:39:31.2037|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-10-02 23:39:31.2077|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 09:14:05.6457|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 09:14:15.2486|INFO|Addressbook.AddressBook|Added New contact pra tha,
+2020-10-03 09:14:49.5313|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 09:15:00.1788|INFO|Addressbook.AddressBook|Added New contact abc def
+2020-10-03 09:15:02.0652|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 09:15:02.0652|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 09:15:38.3123|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-03 09:16:32.2364|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 09:16:32.2364|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 09:16:45.1846|INFO|Addressbook.AddressBookMain|Deleting contacts
+2020-10-03 09:16:48.1508|INFO|Addressbook.AddressBook|Deleted Contact
+2020-10-03 09:16:50.7295|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 09:16:50.7295|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 09:17:33.9036|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-03 09:28:43.9049|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 09:28:53.1965|ERROR|Addressbook.AddressBookMain|   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 52
+   at Addressbook.AddressBookMain.Main(String[] args) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Input string was not in a correct format.
+2020-10-03 10:00:05.8501|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:00:07.1636|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 10:00:16.5290|INFO|Addressbook.AddressBook|Added New contact bruh sdf
+2020-10-03 10:00:20.0143|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-03 10:00:29.5067|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 10:00:36.5153|INFO|Addressbook.AddressBook|Added New contact ds ds
+2020-10-03 10:00:39.6043|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:00:39.6043|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 10:00:43.3255|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-03 10:01:07.7234|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:01:07.7234|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 28Object reference not set to an instance of an object.
+2020-10-03 10:04:26.9272|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 10:04:34.4116|INFO|Addressbook.AddressBook|Added New contact sdfs ds
+2020-10-03 10:04:36.6580|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-03 10:04:45.6942|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:04:45.6942|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 10:04:49.1407|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-03 10:04:57.2605|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 10:05:05.1314|ERROR|Addressbook.AddressBookMain|   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 52
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 33Input string was not in a correct format.
+2020-10-03 10:05:09.6765|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:05:10.5443|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 10:05:20.7715|INFO|Addressbook.AddressBook|Added New contact Book 2 Contact
+2020-10-03 10:05:24.4189|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:05:24.4239|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 10:05:26.1141|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-03 10:05:32.3294|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-03 10:05:34.4926|WARN|Addressbook.AddressBook|Name sd not present in addressbook
+2020-10-03 10:05:36.3302|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:05:36.3302|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 10:05:38.4770|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-03 10:05:45.8909|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 10:05:45.8929|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-03 10:05:50.2612|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-03 10:05:51.4877|INFO|Addressbook.AddressBookMain|Exiting Program

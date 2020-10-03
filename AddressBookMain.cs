@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
+using System.Text.RegularExpressions;
 
 namespace Addressbook
 {
@@ -55,7 +56,7 @@ namespace Addressbook
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Invalid data entered. Error:" + e.StackTrace + e.Message);
+                    Console.WriteLine("Invalid data entered. Error: " + e.Message +"\n" + e.StackTrace);
                     nlog.Error(e.StackTrace + e.Message);
                 }
             }
@@ -73,39 +74,46 @@ namespace Addressbook
 
             while (flag)
             {
-                Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Exit");
-                choice = int.Parse(Console.ReadLine());
-                if (choice == 1)
+                try
                 {
-                    AddressBook addressBook = new AddressBook();
-                    Console.Write("\nEnter New Address Book's Name: ");
-                    string addressBookName = Console.ReadLine();
-                    shelf.AddNewAddressBook(addressBookName, addressBook);
-                    Console.WriteLine("Successfully created " + addressBookName + "\tUsing Address Book " + addressBookName + "...");
-                    UseAddressBook(addressBook);
-                }
-                else if (choice == 2)
-                {
-                    Console.Write("\nEnter Address Book's Name: ");
-                    string addressBookName = Console.ReadLine();
-                    AddressBook addressBook = shelf.GetAddressBook(addressBookName);
-                    if (addressBook!=null)
+                    Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Exit");
+                    choice = int.Parse(Console.ReadLine());
+                    if (choice == 1)
                     {
-                        Console.WriteLine("Using Address Book " + addressBookName + "...");
+                        AddressBook addressBook = new AddressBook();
+                        Console.Write("\nEnter New Address Book's Name: ");
+                        string addressBookName = Console.ReadLine();
+                        shelf.AddNewAddressBook(addressBookName, addressBook);
+                        Console.WriteLine("Successfully created " + addressBookName + "\tUsing Address Book " + addressBookName + "...");
                         UseAddressBook(addressBook);
                     }
+                    else if (choice == 2)
+                    {
+                        Console.Write("\nEnter Address Book's Name: ");
+                        string addressBookName = Console.ReadLine();
+                        AddressBook addressBook = shelf.GetAddressBook(addressBookName);
+                        if (addressBook != null)
+                        {
+                            Console.WriteLine("Using Address Book " + addressBookName + "...");
+                            UseAddressBook(addressBook);
+                        }
+                        else
+                            Console.WriteLine("There is no Book with name " + addressBookName);
+                    }
+                    else if (choice == 3)
+                    {
+                        nlog.Info("Exiting Program");
+                        flag = false;
+                    }
                     else
-                        Console.WriteLine("There is no Book with name "+ addressBookName);
+                    {
+                        nlog.Warn("Invalid Input");
+                        Console.WriteLine("Invalid Input");
+                    }
                 }
-                else if (choice == 3)
+                catch(Exception e)
                 {
-                    nlog.Info("Exiting Program");
-                    flag = false;
-                }
-                else
-                {
-                    nlog.Warn("Invalid Input");
-                    Console.WriteLine("Invalid Input");
+                    Console.WriteLine("Invalid data entered. Error: " + e.Message + "\n" + e.StackTrace);
                 }
             }
 

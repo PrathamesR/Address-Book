@@ -140,3 +140,45 @@
 2020-10-03 10:05:45.8929|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
 2020-10-03 10:05:50.2612|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-10-03 10:05:51.4877|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-03 11:08:44.7352|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 11:08:45.4799|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:08:51.8564|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 53
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Name should only contain alphabets
+2020-10-03 11:11:44.5636|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:11:50.5169|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 53
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Name should only contain alphabets
+2020-10-03 11:14:25.8246|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:14:31.4054|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 53
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Name should only contain alphabets
+2020-10-03 11:15:39.7280|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:17:27.6377|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:17:32.4758|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 64
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34City Name should only contain alphabets
+2020-10-03 11:18:06.6559|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 11:18:08.1007|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:18:09.5110|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 47
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Name should only contain alphabets
+2020-10-03 11:18:23.7232|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:18:28.9194|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 64
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34City Name should only contain alphabets
+2020-10-03 11:18:31.2729|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:18:35.6732|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 47
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Name should only contain alphabets
+2020-10-03 11:18:37.3688|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 11:18:57.8628|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:19:05.6950|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 79
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34ZIP Code should be a 6 digit number
+2020-10-03 11:20:35.9883|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:20:43.6312|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 79
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34ZIP Code should be a 6 digit number
+2020-10-03 11:20:46.3307|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:22:45.5877|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:22:55.8854|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 87
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Phone number should be a 10 digit number
+2020-10-03 11:23:00.9425|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:23:17.4624|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 95
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Check Mail address
+2020-10-03 11:23:24.6327|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-03 11:23:38.9856|INFO|Addressbook.AddressBook|Added New contact abc def
+2020-10-03 11:23:41.3726|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-03 11:23:41.3726|INFO|Addressbook.AddressBook|Displayed Contacts Successfully

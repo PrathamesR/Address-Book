@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NLog;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 namespace Addressbook
 {
@@ -37,23 +38,63 @@ namespace Addressbook
         /// </summary>
         public void AddNewContact()
         {
+            string namePattern = "^[a-zA-Z ]+$";
             Contact contact = new Contact();
+
             Console.Write("Enter First Name: ");
-            contact.firstName = Console.ReadLine();
+            string firstName = Console.ReadLine();
+            if (!Regex.IsMatch(firstName, namePattern))
+                throw new Exception("Name should only contain alphabets");
+            else
+                contact.firstName = firstName;
+
             Console.Write("Enter Last Name: ");
-            contact.lastName = Console.ReadLine();
+            string lastName = Console.ReadLine();
+            if (!Regex.IsMatch(lastName, namePattern))
+                throw new Exception("Name should only contain alphabets");
+            else
+                contact.lastName = lastName;
+
             Console.Write("Enter Address:");
             contact.address = Console.ReadLine();
+
             Console.Write("Enter City: ");
-            contact.city = Console.ReadLine();
+            string city = Console.ReadLine();
+            if (!Regex.IsMatch(city, namePattern))
+                throw new Exception("City Name should only contain alphabets");
+            else
+                contact.city = city;
+
             Console.Write("Enter State: ");
-            contact.state = Console.ReadLine();
+            string state = Console.ReadLine();
+            if (!Regex.IsMatch(state, namePattern))
+                throw new Exception("City Name should only contain alphabets");
+            else
+                contact.state = state;
+
+            string zipPattern = "[0-9]{6}";
             Console.Write("Enter ZIP Code: ");
-            contact.zip = int.Parse(Console.ReadLine());
+            string zip = Console.ReadLine();
+            if (!Regex.IsMatch(zip, zipPattern))
+                throw new Exception("ZIP Code should be a 6 digit number");
+            else
+                contact.zip = int.Parse(zip);
+
+            string pnoPattern = "[0-9]{10}";
             Console.Write("Enter Phone Number: ");
-            contact.phoneNo = double.Parse(Console.ReadLine());
+            string pNo = Console.ReadLine();
+            if (!Regex.IsMatch(pNo, pnoPattern)) 
+                throw new Exception("Phone number should be a 10 digit number");
+            else
+                contact.phoneNo = double.Parse(pNo);
+
+            string mailPattern = @"[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
             Console.Write("Enter Email Id: ");
-            contact.email = Console.ReadLine();
+            string mail = Console.ReadLine();
+            if (!Regex.IsMatch(mail, mailPattern))
+                throw new Exception("Check Mail address");
+            else
+                contact.email = mail;
 
             addressBook.Add(contact);
             Console.WriteLine("New Contact added successfully");

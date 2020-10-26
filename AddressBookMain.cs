@@ -5,42 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using NLog;
 using System.Text.RegularExpressions;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Addressbook
 {
-    public class FileIO
-    {
-        public static void LoadFromFile(string path)
-        {
-            FileStream fileStream = new FileStream(path, FileMode.Open);
-            if (fileStream.Length > 0)
-            {
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                Shelf deserializedShelf = (Shelf)binaryFormatter.Deserialize(fileStream);
-                AddressBookMain.shelf = deserializedShelf;
-                Console.WriteLine("File loaded Successfully from " + path);
-            }
-            fileStream.Close();
-        }
-
-        public static void SaveToFile(Shelf shelf,string path)
-        {
-            FileStream fileStream = new FileStream(path, FileMode.Create);
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            binaryFormatter.Serialize(fileStream, shelf);
-            fileStream.Close();
-            Console.WriteLine("File saved Successfully to " + path);
-        }
-    }
 
     class AddressBookMain
     {
         public static Shelf shelf;
         static string savePath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Shelf.txt";
+        static string csvPath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv";
 
-        public static void UseAddressBook(AddressBook addressbook)
+        public static void UseAddressBook(string Name,AddressBook addressbook)
         {
             Logger nlog = LogManager.GetCurrentClassLogger();
 
@@ -50,7 +25,8 @@ namespace Addressbook
             {
                 try
                 {
-                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Order List\n6. Close Address Book");
+                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact" +
+                        "\n5. Order this Address Book\n6. Save To CSV \n7. Load from CSV\n8. Close Address Book");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -100,6 +76,17 @@ namespace Addressbook
                     }
                     else if (choice == 6)
                     {
+                        FileIO.SaveToCSV(addressbook,csvPath);
+                        Console.WriteLine("Stored Data at "+csvPath);
+                    }
+                    else if (choice == 7)
+                    {
+                        AddressBook Obj = new AddressBook();
+                        Obj.addressBook = FileIO.LoadFromCSV(csvPath);
+                        shelf.ReplaceAddressBook(Name, Obj);
+                    }
+                    else if (choice == 8)
+                    {
                         nlog.Info("Changing Address Book");
                         flag = false;
                     }
@@ -120,11 +107,14 @@ namespace Addressbook
 
         static void Main(string[] args)
         {
-            FileIO.LoadFromFile(savePath);
+            FileIO.LoadFromTxt(savePath);
 
             Logger nlog = LogManager.GetCurrentClassLogger();
 
-            Console.WriteLine("Welcome To Address Book Problem");
+            if (shelf == null)
+                shelf = new Shelf();
+            shelf.ListBooks();
+
             bool flag = true;
             int choice;
 
@@ -132,7 +122,8 @@ namespace Addressbook
             {
                 try
                 {
-                    Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Search Contact by City Name\n4. Search Contact by State Name\n5. Exit");
+
+                    Console.WriteLine("\n1. Create New Address Book \n2. Use Address Book\n3. Search Contact by City Name\n4. Search Contact by State Name\n5. Exit");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -141,17 +132,19 @@ namespace Addressbook
                         string addressBookName = Console.ReadLine();
                         shelf.AddNewAddressBook(addressBookName, addressBook);
                         Console.WriteLine("Successfully created " + addressBookName + "\tUsing Address Book " + addressBookName + "...");
-                        UseAddressBook(addressBook);
+                        UseAddressBook(addressBookName, addressBook);
                     }
                     else if (choice == 2)
                     {
+
+                        shelf.ListBooks();
                         Console.Write("\nEnter Address Book's Name: ");
                         string addressBookName = Console.ReadLine();
                         AddressBook addressBook = shelf.GetAddressBook(addressBookName);
                         if (addressBook != null)
                         {
                             Console.WriteLine("Using Address Book " + addressBookName + "...");
-                            UseAddressBook(addressBook);
+                            UseAddressBook(addressBookName, addressBook);
                         }
                         else
                             Console.WriteLine("There is no Book with name " + addressBookName);
@@ -168,7 +161,7 @@ namespace Addressbook
                     }
                     else if (choice == 5)
                     {
-                        FileIO.SaveToFile(shelf, savePath);
+                        FileIO.SaveToText(shelf, savePath);
                         nlog.Info("Exiting Program");
                         flag = false;
                     }

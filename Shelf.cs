@@ -11,15 +11,25 @@ namespace Addressbook
     {
         Dictionary<string, AddressBook> shelf = new Dictionary<string, AddressBook>();
 
-        public void ShowBooks()
+        public void ListBooks()
         {
-            foreach (var item in shelf)
-                Console.WriteLine(item.Key);
+            if (shelf.Count > 0)
+            {
+                Console.WriteLine("Books Availaible:-");
+                foreach (var item in shelf)
+                    Console.Write("|" + item.Key);
+                Console.WriteLine();
+            }
         }
 
         public void AddNewAddressBook(string addressBookName,AddressBook addressBook)
         {
             shelf.Add(addressBookName, addressBook);
+        }
+
+        public void ReplaceAddressBook(string addressBookName,AddressBook addressBook)
+        {
+            shelf[addressBookName] = addressBook;
         }
 
         public AddressBook GetAddressBook(string name)

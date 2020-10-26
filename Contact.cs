@@ -11,7 +11,7 @@ namespace Addressbook
     {
         public int Compare(Contact x, Contact y)
         {
-            return string.Compare(x.firstName + x.lastName, y.firstName + y.lastName);
+            return string.Compare(x.FirstName + x.LastName, y.FirstName + y.LastName);
         }
     }
 
@@ -19,7 +19,7 @@ namespace Addressbook
     {
         public int Compare(Contact x, Contact y)
         {
-            return string.Compare(x.city, y.city);
+            return string.Compare(x.City, y.City);
         }
     }
 
@@ -35,21 +35,21 @@ namespace Addressbook
     {
         public int Compare(Contact x, Contact y)
         {
-            return y.zip-x.zip;
+            return y.Zip-x.Zip;
         }
     }
 
     [Serializable]
     public class Contact
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string address { get; set; }
-        public string city { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
         public string state { get; set; }
-        public int zip { get; set; }
-        public double phoneNo { get; set; }
-        public string email { get; set; }
+        public int Zip { get; set; }
+        public double PhoneNo { get; set; }
+        public string Email { get; set; }
 
         public Contact()
         {
@@ -58,14 +58,14 @@ namespace Addressbook
 
         public Contact(string firstName, string lastName, string address, string city, string state, int zip, double phoneNo, string email)
         {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.address = address;
-            this.city = city;
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Address = address;
+            this.City = city;
             this.state = state;
-            this.zip = zip;
-            this.phoneNo = phoneNo;
-            this.email = email;
+            this.Zip = zip;
+            this.PhoneNo = phoneNo;
+            this.Email = email;
         }
 
         public object this[string propName]
@@ -86,7 +86,7 @@ namespace Addressbook
 
         public override string ToString()
         {
-            return firstName + "\t\t" + lastName + "\t\t" + address + "\t" + city + "\t" + state + "\t" + zip + "\t\t" + phoneNo + "\t" + email;
+            return FirstName + "\t\t" + LastName + "\t\t" + Address + "\t" + City + "\t" + state + "\t" + Zip + "\t\t" + PhoneNo + "\t" + Email;
         }
 
         public void DisplayContact()

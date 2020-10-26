@@ -485,3 +485,106 @@
 2020-10-26 19:16:45.4408|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-10-26 19:16:45.8907|WARN|Addressbook.AddressBookMain|Invalid Input
 2020-10-26 19:16:46.8940|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 19:50:16.5314|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 19:50:26.2824|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 19:50:35.7445|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 19:50:42.2615|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 19:50:56.7599|INFO|Addressbook.AddressBookMain|Deleting contacts
+2020-10-26 19:51:01.2526|INFO|Addressbook.AddressBookMain|Deleting contacts
+2020-10-26 19:53:56.1920|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 19:54:07.7813|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 19:54:09.2061|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 20:01:37.9109|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:01:38.7745|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 20:01:48.0947|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 62
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 37City Name should only contain alphabets
+2020-10-26 20:01:55.0297|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 20:02:13.3348|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:02:14.8363|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:03:53.5270|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:03:54.5098|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 20:04:18.8181|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:04:25.4139|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:04:26.5938|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 20:09:18.0193|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:09:24.0208|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:09:25.7931|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 20:14:36.5957|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 20:15:03.0150|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:15:04.3113|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 20:15:35.3521|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:15:41.6958|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:15:42.6304|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 20:22:25.2136|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:22:26.6006|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 20:22:49.6091|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:22:52.9612|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 20:44:47.2551|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 20:44:58.2173|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:45:55.5288|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:46:20.0546|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:46:54.3362|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at Addressbook.FileIO.LoadFromCsv(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 51
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 85The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.
+2020-10-26 20:47:58.6975|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:48:01.2213|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path)
+   at Addressbook.FileIO.SaveToCSV(AddressBook addressBook, String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 42
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 79The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.
+2020-10-26 20:54:53.2533|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:55:02.2488|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:55:21.5309|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:55:24.8455|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 20:55:37.3338|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:55:39.4638|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at Addressbook.FileIO.LoadFromCsv(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 50
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 85The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.
+2020-10-26 20:56:56.9484|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 20:56:58.0711|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at Addressbook.FileIO.LoadFromCsv(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 50
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 85The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.
+2020-10-26 21:01:21.8477|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 21:01:23.6058|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at Addressbook.FileIO.LoadFromCsv(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 50
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 85The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.
+2020-10-26 21:04:36.7841|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at Addressbook.FileIO.LoadFromCsv(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 50
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 85The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.
+2020-10-26 21:11:21.7061|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 50
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 85The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.
+2020-10-26 21:12:03.4245|ERROR|Addressbook.AddressBookMain|   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 50
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 85The process cannot access the file 'D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv' because it is being used by another process.

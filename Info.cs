@@ -8,7 +8,7 @@ namespace Addressbook
 {
     class Info
     {
-        public static Dictionary<Contact, string> cityInfo = new Dictionary<Contact, string>();
-        public static Dictionary<Contact, string> stateInfo = new Dictionary<Contact, string>();
+        public static Dictionary<string, List<Contact>> cityInfo = new Dictionary<string, List<Contact>>();
+        public static Dictionary<string, List<Contact>> stateInfo = new Dictionary<string, List<Contact>>();
     }
 }

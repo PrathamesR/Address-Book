@@ -100,8 +100,8 @@ namespace Addressbook
 
             addressBook.Add(contact);
 
-            Info.cityInfo.Add(contact, city);
-            Info.stateInfo.Add(contact, state);
+            Info.cityInfo[city].Add(contact); 
+            Info.stateInfo[state].Add(contact);
 
             Console.WriteLine("New Contact added successfully");
             logger.Info("Added New contact " + contact.firstName + " " + contact.lastName);
@@ -138,9 +138,10 @@ namespace Addressbook
                 contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice - 1]].GetType()).ConvertFrom(newValue);
 
                 if (choice == 4)
-                    Info.cityInfo[contact] = newValue;
-                else if (choice == 5)
-                    Info.stateInfo[contact] = newValue;
+                    Info.cityInfo[exitingVal][Info.cityInfo[exitingVal].IndexOf(contact)].city = newValue;
+                else if (choice == 5) 
+                    Info.stateInfo[exitingVal][Info.stateInfo[exitingVal].IndexOf(contact)].state = newValue;
+
 
                 Console.WriteLine(properties[choice] + " edited succesfully");
             }

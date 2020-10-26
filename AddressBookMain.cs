@@ -14,6 +14,7 @@ namespace Addressbook
         public static Shelf shelf;
         static string savePath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Shelf.txt";
         static string csvPath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv";
+        static string jsonPath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Shelf.json";
 
         public static void UseAddressBook(string Name,AddressBook addressbook)
         {
@@ -84,6 +85,7 @@ namespace Addressbook
                         AddressBook Obj = new AddressBook();
                         Obj.addressBook = FileIO.LoadFromCSV(csvPath);
                         shelf.ReplaceAddressBook(Name, Obj);
+                        Console.WriteLine("Loaded Data from " + csvPath);
                     }
                     else if (choice == 8)
                     {
@@ -123,7 +125,8 @@ namespace Addressbook
                 try
                 {
 
-                    Console.WriteLine("\n1. Create New Address Book \n2. Use Address Book\n3. Search Contact by City Name\n4. Search Contact by State Name\n5. Exit");
+                    Console.WriteLine("\n1. Create New Address Book \n2. Use Address Book\n3. Search Contact by City Name\n4. Search Contact by State Name" +
+                        "\n5. Save To JSON" + "\n6. Load from JSON" + "\n7. Exit");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -160,6 +163,16 @@ namespace Addressbook
                         Info.GetPeopleByState(Console.ReadLine());
                     }
                     else if (choice == 5)
+                    {
+                        FileIO.SaveToJSON(shelf, jsonPath);
+                        Console.WriteLine("Data saved to JSON file");
+                    }
+                    else if (choice == 6)
+                    {
+                        FileIO.LoadFromJSON(shelf, jsonPath);
+                        Console.WriteLine("Data Loaded from JSON file");
+                    }
+                    else if (choice == 7)
                     {
                         FileIO.SaveToText(shelf, savePath);
                         nlog.Info("Exiting Program");

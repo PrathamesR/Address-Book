@@ -1,0 +1,30 @@
+{
+  "Book 1": {
+    "addressBook": [
+      {
+        "FirstName": "Prathamesh",
+        "LastName": "Rajput",
+        "Address": "abc",
+        "City": "Thane",
+        "state": "Maharashtra",
+        "Zip": "123456",
+        "PhoneNo": "1234567890",
+        "Email": "abc@gmail.com"
+      }
+    ]
+  },
+  "Book 2": {
+    "addressBook": [
+      {
+        "FirstName": "Prathamesh",
+        "LastName": "Rajput",
+        "Address": "abc",
+        "City": "Thane",
+        "state": "Maharashtra",
+        "Zip": "123456",
+        "PhoneNo": "1234567890",
+        "Email": "abc@gmail.com"
+      }
+    ]
+  }
+}

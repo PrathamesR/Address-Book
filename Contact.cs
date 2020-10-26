@@ -35,7 +35,7 @@ namespace Addressbook
     {
         public int Compare(Contact x, Contact y)
         {
-            return y.Zip-x.Zip;
+            return string.Compare(x.Zip,y.Zip);
         }
     }
 
@@ -47,8 +47,8 @@ namespace Addressbook
         public string Address { get; set; }
         public string City { get; set; }
         public string state { get; set; }
-        public int Zip { get; set; }
-        public double PhoneNo { get; set; }
+        public string Zip { get; set; }
+        public string PhoneNo { get; set; }
         public string Email { get; set; }
 
         public Contact()
@@ -56,7 +56,7 @@ namespace Addressbook
 
         }
 
-        public Contact(string firstName, string lastName, string address, string city, string state, int zip, double phoneNo, string email)
+        public Contact(string firstName, string lastName, string address, string city, string state, string zip, string phoneNo, string email)
         {
             this.FirstName = firstName;
             this.LastName = lastName;

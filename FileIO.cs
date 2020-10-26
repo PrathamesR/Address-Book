@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -14,8 +15,8 @@ namespace Addressbook
     {
         public static void LoadFromTxt(string path)
         {
-            FileStream fileStream = new FileStream(path, FileMode.Open,FileAccess.Read);
-            if (fileStream.Length > 0)
+            FileStream fileStream = new FileStream(path,FileMode.Open);
+            if (fileStream.Length > 6)
             {
                 BinaryFormatter binaryFormatter = new BinaryFormatter();
                 Shelf deserializedShelf = (Shelf)binaryFormatter.Deserialize(fileStream);
@@ -51,8 +52,24 @@ namespace Addressbook
             using (CsvReader csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
                 reader.Close();
-                return csv.GetRecords<Contact>().ToList();
+                List<Contact> list = csv.GetRecords<Contact>().ToList();
+                return list;
             }
+        }
+
+        public static void SaveToJSON(Shelf shelf,string path)
+        {
+            JsonSerializer serializer = new JsonSerializer();
+            using(StreamWriter sw = new StreamWriter(path))
+            using(JsonWriter writer = new JsonTextWriter(sw))
+            {
+                serializer.Serialize(writer, shelf.shelf);
+            }
+        }
+
+        public static void LoadFromJSON(Shelf shelf, string path)
+        {
+            shelf.shelf = JsonConvert.DeserializeObject<Dictionary<string, AddressBook>>(File.ReadAllText(path));
         }
     }
 }

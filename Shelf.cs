@@ -9,7 +9,7 @@ namespace Addressbook
     [Serializable]
     public class Shelf
     {
-        Dictionary<string, AddressBook> shelf = new Dictionary<string, AddressBook>();
+        public Dictionary<string, AddressBook> shelf = new Dictionary<string, AddressBook>();
 
         public void ListBooks()
         {

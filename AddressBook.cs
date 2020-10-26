@@ -76,7 +76,7 @@ namespace Addressbook
             if (!Regex.IsMatch(zip, zipPattern))
                 throw new Exception("ZIP Code should be a 6 digit number");
             else
-                contact.Zip = int.Parse(zip);
+                contact.Zip = (zip);
 
             string pnoPattern = "[0-9]{10}";
             Console.Write("Enter Phone Number: ");
@@ -84,7 +84,7 @@ namespace Addressbook
             if (!Regex.IsMatch(pNo, pnoPattern))
                 throw new Exception("Phone number should be a 10 digit number");
             else
-                contact.PhoneNo = double.Parse(pNo);
+                contact.PhoneNo = (pNo);
 
             string mailPattern = @"[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
             Console.Write("Enter Email Id: ");

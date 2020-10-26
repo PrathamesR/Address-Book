@@ -21,7 +21,7 @@ namespace Addressbook
             {
                 try
                 {
-                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Close Address Book");
+                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Order by Name\n6. Close Address Book");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -44,6 +44,11 @@ namespace Addressbook
                         addressbook.DeleteContact();
                     }
                     else if (choice == 5)
+                    {
+                        addressbook.addressBook.Sort(new NameComparer());
+                        Console.WriteLine("Address Book Sorted By Name");
+                    }
+                    else if (choice == 6)
                     {
                         nlog.Info("Changing Address Book");
                         flag = false;
@@ -76,8 +81,7 @@ namespace Addressbook
             {
                 try
                 {
-                    Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Search Contact by City Name" +
-                        "\n4. Search Contact by State Name\n5. Exit");
+                    Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Search Contact by City Name\n4. Search Contact by State Name\n5.Exit");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -104,7 +108,7 @@ namespace Addressbook
                     else if (choice == 3)
                     {
                         Console.Write("\nEnter City Name: ");
-                        Info.GetPeopleByCity(Console.ReadLine());
+                        Info.GetPeopleByState(Console.ReadLine());
                     }
                     else if (choice == 4)
                     {

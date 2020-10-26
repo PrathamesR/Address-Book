@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace Addressbook
 {
-    public class ContactComparer : IComparer<Contact>
+    public class NameComparer : IComparer<Contact>
     {
         public int Compare(Contact x, Contact y)
         {
@@ -60,9 +60,14 @@ namespace Addressbook
             }
         }
 
+        public override string ToString()
+        {
+            return firstName + "\t\t" + lastName + "\t\t" + address + "\t" + city + "\t" + state + "\t" + zip + "\t\t" + phoneNo + "\t" + email;
+        }
+
         public void DisplayContact()
         {
-            Console.WriteLine(firstName + "\t\t" + lastName + "\t\t" + address + "\t" + city + "\t" + state + "\t" + zip + "\t\t" + phoneNo + "\t" + email);
+            Console.WriteLine(ToString());
         }
     }
 }

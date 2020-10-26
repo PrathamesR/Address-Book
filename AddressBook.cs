@@ -12,10 +12,8 @@ namespace Addressbook
 
     public class AddressBook
     {
-        public SortedSet<Contact> addressBook = new SortedSet<Contact>(new ContactComparer());
+        public List<Contact> addressBook = new List<Contact>();
         Logger logger = LogManager.GetCurrentClassLogger();
-
-
 
         /// <summary>
         /// Displays All Contacts in the AdressBook

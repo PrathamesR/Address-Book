@@ -12,8 +12,10 @@ namespace Addressbook
 
     public class AddressBook
     {
-        SortedSet<Contact> addressBook = new SortedSet<Contact>(new ContactComparer());
+        public SortedSet<Contact> addressBook = new SortedSet<Contact>(new ContactComparer());
         Logger logger = LogManager.GetCurrentClassLogger();
+
+
 
         /// <summary>
         /// Displays All Contacts in the AdressBook
@@ -27,7 +29,7 @@ namespace Addressbook
                 Console.WriteLine("\nDisplaying Contacts - \nFirst Name\tLast Name\tAddress\tCity\tState\tZIP Code\tPhone Number\tEmailId");
                 foreach (Contact contact in addressBook)
                 {
-                    Console.WriteLine(contact.firstName + "\t\t" + contact.lastName + "\t\t" + contact.address + "\t" + contact.city + "\t" + contact.state + "\t" + contact.zip + "\t\t" + contact.phoneNo + "\t\t" + contact.email);
+                    contact.DisplayContact();
                 }
                 logger.Info("Displayed Contacts Successfully");
             }

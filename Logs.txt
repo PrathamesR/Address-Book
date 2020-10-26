@@ -247,3 +247,28 @@
 2020-10-19 08:41:54.6472|INFO|Addressbook.AddressBookMain|Editing contacts
 2020-10-19 08:42:17.1475|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-10-19 08:42:17.1475|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 08:43:15.4100|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 08:44:10.3759|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 08:44:19.6090|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 81
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34ZIP Code should be a 6 digit number
+2020-10-26 08:44:22.3918|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 09:01:29.6001|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 09:01:48.0490|INFO|Addressbook.AddressBook|Added New contact k k
+2020-10-26 09:01:51.0913|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 09:01:51.0913|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 09:01:55.2971|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 09:01:56.7853|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 09:14:03.6210|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 09:14:17.4625|INFO|Addressbook.AddressBook|Added New contact a a
+2020-10-26 09:14:19.8848|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 09:14:19.8848|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 09:14:21.4416|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 09:16:41.2480|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 09:16:52.5550|INFO|Addressbook.AddressBook|Added New contact a a
+2020-10-26 09:16:55.3106|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 09:17:12.2944|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 09:17:22.6604|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 89
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Phone number should be a 10 digit number
+2020-10-26 09:17:25.1900|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 09:17:34.0996|INFO|Addressbook.AddressBook|Added New contact b b
+2020-10-26 09:17:38.9302|INFO|Addressbook.AddressBookMain|Changing Address Book

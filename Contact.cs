@@ -59,5 +59,10 @@ namespace Addressbook
                 propertyInfo.SetValue(this, value, null);
             }
         }
+
+        public void DisplayContact()
+        {
+            Console.WriteLine(firstName + "\t\t" + lastName + "\t\t" + address + "\t" + city + "\t" + state + "\t" + zip + "\t\t" + phoneNo + "\t" + email);
+        }
     }
 }

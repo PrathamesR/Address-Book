@@ -85,7 +85,7 @@ namespace Addressbook
             string pnoPattern = "[0-9]{10}";
             Console.Write("Enter Phone Number: ");
             string pNo = Console.ReadLine();
-            if (!Regex.IsMatch(pNo, pnoPattern)) 
+            if (!Regex.IsMatch(pNo, pnoPattern))
                 throw new Exception("Phone number should be a 10 digit number");
             else
                 contact.phoneNo = double.Parse(pNo);
@@ -100,11 +100,11 @@ namespace Addressbook
 
             addressBook.Add(contact);
 
-            Info.cityInfo.Add(city, contact);
-            Info.stateInfo.Add(state, contact);
+            Info.cityInfo.Add(contact, city);
+            Info.stateInfo.Add(contact, state);
 
             Console.WriteLine("New Contact added successfully");
-            logger.Info("Added New contact "+contact.firstName+" "+contact.lastName);
+            logger.Info("Added New contact " + contact.firstName + " " + contact.lastName);
         }
 
         /// <summary>
@@ -115,9 +115,9 @@ namespace Addressbook
             Console.Write("\nEnter the name of the contact to edit: ");
             string name = Console.ReadLine();
 
-            Contact contact=null;
+            Contact contact = null;
             IEnumerator<Contact> itr = addressBook.GetEnumerator();
-            while(itr.MoveNext())
+            while (itr.MoveNext())
             {
                 contact = itr.Current as Contact;
                 if (contact.firstName == name)
@@ -125,22 +125,22 @@ namespace Addressbook
             }
 
 
-            if(name==contact.firstName)
+            if (name == contact.firstName)
             {
                 Console.WriteLine("Select The property to edit");
                 Console.WriteLine("1.First Name\n2.Last Name\n3.Address\n4.City\n5.State\n6.ZIP Code\n7.Phone Number\n8.Email Address");
                 string[] properties = { "firstName", "lastName", "address", "city", "state", "zip", "phoneNo", "email" };
-                
+
                 int choice = int.Parse(Console.ReadLine());
                 string exitingVal = contact[properties[choice - 1]].ToString();
-                Console.Write("Existing value : " +exitingVal +"\t Enter New Value: ");
+                Console.Write("Existing value : " + exitingVal + "\t Enter New Value: ");
                 string newValue = Console.ReadLine();
-                contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice-1]].GetType()).ConvertFrom(newValue);
+                contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice - 1]].GetType()).ConvertFrom(newValue);
 
                 if (choice == 4)
-                    Info.cityInfo[exitingVal].city = newValue;
+                    Info.cityInfo[contact] = newValue;
                 else if (choice == 5)
-                    Info.cityInfo[exitingVal].state = newValue;
+                    Info.stateInfo[contact] = newValue;
 
                 Console.WriteLine(properties[choice] + " edited succesfully");
             }

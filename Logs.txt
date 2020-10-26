@@ -282,3 +282,14 @@
 2020-10-26 10:49:54.7240|INFO|Addressbook.AddressBookMain|Editing contacts
 2020-10-26 10:50:05.1272|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-10-26 10:50:05.6656|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 11:03:09.6384|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 11:03:20.3776|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 97
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Check Mail address
+2020-10-26 11:03:25.1519|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 11:03:36.2216|INFO|Addressbook.AddressBook|Added New contact a b
+2020-10-26 11:03:39.9527|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 11:03:54.3940|ERROR|Addressbook.AddressBookMain|   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 103
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34An item with the same key has already been added.

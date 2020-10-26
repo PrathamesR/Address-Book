@@ -39,7 +39,7 @@ namespace Addressbook
         }
     }
 
-
+    [Serializable]
     public class Contact
     {
         public string firstName { get; set; }

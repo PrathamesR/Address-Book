@@ -41,6 +41,7 @@
     <Compile Include="Shelf.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Shelf.txt" />
     <None Include="App.config" />
     <Content Include="Logs.txt" />
     <Content Include="NLog.config">

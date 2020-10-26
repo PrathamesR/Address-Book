@@ -5,12 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 using NLog;
 using System.Text.RegularExpressions;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Addressbook
 {
+    public class FileIO
+    {
+        public static void LoadFromFile(string path)
+        {
+            FileStream fileStream = new FileStream(path, FileMode.Open);
+            if (fileStream.Length > 0)
+            {
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
+                Shelf deserializedShelf = (Shelf)binaryFormatter.Deserialize(fileStream);
+                AddressBookMain.shelf = deserializedShelf;
+                Console.WriteLine("File loaded Successfully from " + path);
+            }
+            fileStream.Close();
+        }
+
+        public static void SaveToFile(Shelf shelf,string path)
+        {
+            FileStream fileStream = new FileStream(path, FileMode.Create);
+            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            binaryFormatter.Serialize(fileStream, shelf);
+            fileStream.Close();
+            Console.WriteLine("File saved Successfully to " + path);
+        }
+    }
 
     class AddressBookMain
     {
+        public static Shelf shelf;
+        static string savePath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Shelf.txt";
+
         public static void UseAddressBook(AddressBook addressbook)
         {
             Logger nlog = LogManager.GetCurrentClassLogger();
@@ -91,10 +120,11 @@ namespace Addressbook
 
         static void Main(string[] args)
         {
+            FileIO.LoadFromFile(savePath);
+
             Logger nlog = LogManager.GetCurrentClassLogger();
 
             Console.WriteLine("Welcome To Address Book Problem");
-            Shelf shelf = new Shelf();
             bool flag = true;
             int choice;
 
@@ -138,6 +168,7 @@ namespace Addressbook
                     }
                     else if (choice == 5)
                     {
+                        FileIO.SaveToFile(shelf, savePath);
                         nlog.Info("Exiting Program");
                         flag = false;
                     }

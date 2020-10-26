@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Addressbook
 {
-    class Shelf
+    [Serializable]
+    public class Shelf
     {
         Dictionary<string, AddressBook> shelf = new Dictionary<string, AddressBook>();
+
+        public void ShowBooks()
+        {
+            foreach (var item in shelf)
+                Console.WriteLine(item.Key);
+        }
 
         public void AddNewAddressBook(string addressBookName,AddressBook addressBook)
         {
@@ -17,12 +24,7 @@ namespace Addressbook
 
         public AddressBook GetAddressBook(string name)
         {
-            foreach(var item in shelf)
-            {
-                if (item.Key == name)
-                    return item.Value;
-            }
-            return null;
+            return shelf[name];
         }
     }
 }

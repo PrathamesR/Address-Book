@@ -9,11 +9,10 @@ using System.Text.RegularExpressions;
 
 namespace Addressbook
 {
-
+    [Serializable]
     public class AddressBook
     {
         public List<Contact> addressBook = new List<Contact>();
-        Logger logger = LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Displays All Contacts in the AdressBook
@@ -29,7 +28,6 @@ namespace Addressbook
                 {
                     contact.DisplayContact();
                 }
-                logger.Info("Displayed Contacts Successfully");
             }
         }
 
@@ -110,7 +108,6 @@ namespace Addressbook
                 Info.stateInfo.Add(state, new List<Contact>() { contact });
 
             Console.WriteLine("New Contact added successfully");
-            logger.Info("Added New contact " + contact.firstName + " " + contact.lastName);
         }
 
         /// <summary>
@@ -153,7 +150,6 @@ namespace Addressbook
             }
             else
             {
-                logger.Warn("Name " + name + " not present in addressbook");
                 Console.WriteLine("Name not Found");
             }
         }
@@ -179,11 +175,9 @@ namespace Addressbook
             {
                 addressBook.Remove(contact);
                 Console.WriteLine("Contact Deleted Successfully");
-                logger.Info("Deleted Contact");
             }
             else
             {
-                logger.Warn("Name " + name + " not present in addressbook");
                 Console.WriteLine("Name not Found");
             }
 

@@ -99,6 +99,10 @@ namespace Addressbook
                 contact.email = mail;
 
             addressBook.Add(contact);
+
+            Info.cityInfo.Add(city, contact);
+            Info.stateInfo.Add(state, contact);
+
             Console.WriteLine("New Contact added successfully");
             logger.Info("Added New contact "+contact.firstName+" "+contact.lastName);
         }
@@ -128,9 +132,15 @@ namespace Addressbook
                 string[] properties = { "firstName", "lastName", "address", "city", "state", "zip", "phoneNo", "email" };
                 
                 int choice = int.Parse(Console.ReadLine());
-                Console.Write("Existing value : " + contact[properties[choice-1]]+"\t Enter New Value: ");
-                contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice-1]].GetType()).ConvertFrom(Console.ReadLine());
+                string exitingVal = contact[properties[choice - 1]].ToString();
+                Console.Write("Existing value : " +exitingVal +"\t Enter New Value: ");
+                string newValue = Console.ReadLine();
+                contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice-1]].GetType()).ConvertFrom(newValue);
 
+                if (choice == 4)
+                    Info.cityInfo[exitingVal].city = newValue;
+                else if (choice == 5)
+                    Info.cityInfo[exitingVal].state = newValue;
 
                 Console.WriteLine(properties[choice] + " edited succesfully");
             }

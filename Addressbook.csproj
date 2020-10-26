@@ -36,6 +36,7 @@
     <Compile Include="AddressBook.cs" />
     <Compile Include="AddressBookMain.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="Info.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shelf.cs" />
   </ItemGroup>

@@ -25,7 +25,6 @@ namespace Addressbook
             return null;
         }
 
-
         internal enum SearchBy { city,state}
         public void SearchPeopleBy(string value,SearchBy searchBy)
         {

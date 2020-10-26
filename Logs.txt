@@ -272,3 +272,13 @@
 2020-10-26 09:17:25.1900|INFO|Addressbook.AddressBookMain|Adding new contact
 2020-10-26 09:17:34.0996|INFO|Addressbook.AddressBook|Added New contact b b
 2020-10-26 09:17:38.9302|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 10:48:00.0440|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-26 10:49:14.2080|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 10:49:33.9141|INFO|Addressbook.AddressBook|Added New contact Abc BcD
+2020-10-26 10:49:39.1504|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 10:49:39.1803|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 10:49:46.3395|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-26 10:49:52.0523|WARN|Addressbook.AddressBook|Name aBC not present in addressbook
+2020-10-26 10:49:54.7240|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-26 10:50:05.1272|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 10:50:05.6656|INFO|Addressbook.AddressBookMain|Exiting Program

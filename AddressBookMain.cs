@@ -21,7 +21,7 @@ namespace Addressbook
             {
                 try
                 {
-                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Order by Name\n6. Close Address Book");
+                    Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact\n5. Order List\n6. Close Address Book");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -45,8 +45,29 @@ namespace Addressbook
                     }
                     else if (choice == 5)
                     {
-                        addressbook.addressBook.Sort(new NameComparer());
-                        Console.WriteLine("Address Book Sorted By Name");
+                        Console.WriteLine("\n1.Name\n2.City\n3.State\n4.ZIP");
+                        int orderChoice = int.Parse(Console.ReadLine());
+                        switch(orderChoice)
+                        {
+                            case 1: addressbook.addressBook.Sort(new NameComparer());
+                                Console.WriteLine("Sorted Successfully By Name");
+                                break;
+                            case 2:
+                                addressbook.addressBook.Sort(new CityComparer());
+                                Console.WriteLine("Sorted Successfully By City");
+                                break;
+                            case 3:
+                                addressbook.addressBook.Sort(new StateComparer());
+                                Console.WriteLine("Sorted Successfully By State");
+                                break;
+                            case 4:
+                                addressbook.addressBook.Sort(new ZipComparer());
+                                Console.WriteLine("Sorted Successfully By ZIP");
+                                break;
+                            default:
+                                Console.WriteLine("Invalid Input");
+                                break;
+                        }
                     }
                     else if (choice == 6)
                     {
@@ -81,7 +102,7 @@ namespace Addressbook
             {
                 try
                 {
-                    Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Search Contact by City Name\n4. Search Contact by State Name\n5.Exit");
+                    Console.WriteLine("\n1. Create New Address Book \n2. Use Another Address Book\n3. Search Contact by City Name\n4. Search Contact by State Name\n5. Exit");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {

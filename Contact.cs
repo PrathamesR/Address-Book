@@ -15,6 +15,30 @@ namespace Addressbook
         }
     }
 
+    public class CityComparer : IComparer<Contact>
+    {
+        public int Compare(Contact x, Contact y)
+        {
+            return string.Compare(x.city, y.city);
+        }
+    }
+
+    public class StateComparer : IComparer<Contact>
+    {
+        public int Compare(Contact x, Contact y)
+        {
+            return string.Compare(x.state, y.state);
+        }
+    }
+
+    public class ZipComparer : IComparer<Contact>
+    {
+        public int Compare(Contact x, Contact y)
+        {
+            return y.zip-x.zip;
+        }
+    }
+
 
     public class Contact
     {

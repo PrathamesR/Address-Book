@@ -394,3 +394,43 @@
 2020-10-26 17:53:31.8404|INFO|Addressbook.AddressBook|Added New contact as sdfs
 2020-10-26 17:53:35.4355|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-10-26 17:53:35.4425|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:08:06.4055|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:08:20.8762|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 87
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Phone number should be a 10 digit number
+2020-10-26 18:08:22.5524|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:08:41.2444|INFO|Addressbook.AddressBook|Added New contact adfs sdf
+2020-10-26 18:08:43.3330|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:09:12.4154|INFO|Addressbook.AddressBook|Added New contact vxz vaea
+2020-10-26 18:09:14.1455|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:09:14.1455|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:09:15.7177|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:09:26.9356|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 79
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34ZIP Code should be a 6 digit number
+2020-10-26 18:09:28.6017|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:09:55.4545|INFO|Addressbook.AddressBook|Added New contact dfsa vcxew
+2020-10-26 18:09:57.6958|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:09:57.6958|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:10:08.7406|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:10:08.7406|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:10:28.6196|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:10:28.6196|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:11:28.8062|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:11:42.6588|INFO|Addressbook.AddressBook|Added New contact adsf cxedf
+2020-10-26 18:11:44.8682|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:11:44.8682|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:11:46.1964|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:12:03.5344|INFO|Addressbook.AddressBook|Added New contact opk sdnkfj
+2020-10-26 18:12:07.4438|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:12:33.8752|INFO|Addressbook.AddressBook|Added New contact po mfosk
+2020-10-26 18:12:36.7507|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-26 18:13:00.7993|INFO|Addressbook.AddressBook|Added New contact qw dsk
+2020-10-26 18:13:03.4782|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:13:03.4782|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:13:11.3816|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:13:11.3816|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:13:20.2075|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:13:20.2164|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:13:36.3054|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-26 18:13:36.3054|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-26 18:14:03.2934|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-26 18:14:04.5064|INFO|Addressbook.AddressBookMain|Exiting Program

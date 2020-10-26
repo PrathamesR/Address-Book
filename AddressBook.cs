@@ -44,24 +44,24 @@ namespace Addressbook
             if (!Regex.IsMatch(firstName, namePattern))
                 throw new Exception("Name should only contain alphabets");
             else
-                contact.firstName = firstName;
+                contact.FirstName = firstName;
 
             Console.Write("Enter Last Name: ");
             string lastName = Console.ReadLine();
             if (!Regex.IsMatch(lastName, namePattern))
                 throw new Exception("Name should only contain alphabets");
             else
-                contact.lastName = lastName;
+                contact.LastName = lastName;
 
             Console.Write("Enter Address:");
-            contact.address = Console.ReadLine();
+            contact.Address = Console.ReadLine();
 
             Console.Write("Enter City: ");
             string city = Console.ReadLine();
             if (!Regex.IsMatch(city, namePattern))
                 throw new Exception("City Name should only contain alphabets");
             else
-                contact.city = city;
+                contact.City = city;
 
             Console.Write("Enter State: ");
             string state = Console.ReadLine();
@@ -76,7 +76,7 @@ namespace Addressbook
             if (!Regex.IsMatch(zip, zipPattern))
                 throw new Exception("ZIP Code should be a 6 digit number");
             else
-                contact.zip = int.Parse(zip);
+                contact.Zip = int.Parse(zip);
 
             string pnoPattern = "[0-9]{10}";
             Console.Write("Enter Phone Number: ");
@@ -84,7 +84,7 @@ namespace Addressbook
             if (!Regex.IsMatch(pNo, pnoPattern))
                 throw new Exception("Phone number should be a 10 digit number");
             else
-                contact.phoneNo = double.Parse(pNo);
+                contact.PhoneNo = double.Parse(pNo);
 
             string mailPattern = @"[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
             Console.Write("Enter Email Id: ");
@@ -92,7 +92,7 @@ namespace Addressbook
             if (!Regex.IsMatch(mail, mailPattern))
                 throw new Exception("Check Mail address");
             else
-                contact.email = mail;
+                contact.Email = mail;
 
             addressBook.Add(contact);
 
@@ -123,12 +123,12 @@ namespace Addressbook
             while (itr.MoveNext())
             {
                 contact = itr.Current as Contact;
-                if (contact.firstName == name)
+                if (contact.FirstName == name)
                     break;
             }
 
 
-            if (name == contact.firstName)
+            if (name == contact.FirstName)
             {
                 Console.WriteLine("Select The property to edit");
                 Console.WriteLine("1.First Name\n2.Last Name\n3.Address\n4.City\n5.State\n6.ZIP Code\n7.Phone Number\n8.Email Address");
@@ -141,7 +141,7 @@ namespace Addressbook
                 contact[properties[choice]] = TypeDescriptor.GetConverter(contact[properties[choice - 1]].GetType()).ConvertFrom(newValue);
 
                 if (choice == 4)
-                    Info.cityInfo[exitingVal][Info.cityInfo[exitingVal].IndexOf(contact)].city = newValue;
+                    Info.cityInfo[exitingVal][Info.cityInfo[exitingVal].IndexOf(contact)].City = newValue;
                 else if (choice == 5) 
                     Info.stateInfo[exitingVal][Info.stateInfo[exitingVal].IndexOf(contact)].state = newValue;
 
@@ -167,11 +167,11 @@ namespace Addressbook
             while (itr.MoveNext())
             {
                 contact = itr.Current as Contact;
-                if (contact.firstName == name)
+                if (contact.FirstName == name)
                     break;
             }
 
-            if (name == contact.firstName)
+            if (name == contact.FirstName)
             {
                 addressBook.Remove(contact);
                 Console.WriteLine("Contact Deleted Successfully");

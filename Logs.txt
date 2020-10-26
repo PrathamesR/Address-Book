@@ -182,3 +182,68 @@
 2020-10-03 11:23:38.9856|INFO|Addressbook.AddressBook|Added New contact abc def
 2020-10-03 11:23:41.3726|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-10-03 11:23:41.3726|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-17 12:47:56.4916|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-17 12:55:04.1304|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-17 12:55:17.7569|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 79
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34ZIP Code should be a 6 digit number
+2020-10-17 12:55:31.8143|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-17 12:55:34.0390|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-17 12:55:57.8604|INFO|Addressbook.AddressBook|Added New contact pra tha
+2020-10-17 12:55:59.6412|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-17 12:55:59.6432|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-17 12:56:15.3202|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-17 12:56:38.7198|INFO|Addressbook.AddressBook|Added New contact haha huhu
+2020-10-17 12:56:40.2962|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-17 12:56:40.3012|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-17 12:56:46.4760|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-17 12:57:03.4290|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-17 12:57:05.9185|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-17 12:57:26.3105|INFO|Addressbook.AddressBook|Added New contact abcdef ghijkl
+2020-10-17 12:57:28.5484|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-17 12:57:28.5494|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-17 12:57:36.8283|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-17 12:57:51.1532|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-17 12:57:51.1532|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-17 12:57:58.6626|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-17 12:58:02.1973|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-19 08:38:00.6818|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-19 08:38:02.2068|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-19 08:38:06.1079|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 47
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Name should only contain alphabets
+2020-10-19 08:38:16.5591|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-19 08:38:32.8440|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 87
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34Phone number should be a 10 digit number
+2020-10-19 08:38:35.0165|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-19 08:38:53.1393|INFO|Addressbook.AddressBook|Added New contact Pra tha
+2020-10-19 08:38:57.0276|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-19 08:38:57.0276|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-19 08:39:00.2206|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-19 08:39:14.3594|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-19 08:39:17.1192|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-19 08:39:23.3525|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 79
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 34ZIP Code should be a 6 digit number
+2020-10-19 08:39:37.4667|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-19 08:39:58.4103|INFO|Addressbook.AddressBook|Added New contact sbv dfg
+2020-10-19 08:40:19.5645|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-19 08:40:19.5665|INFO|Addressbook.AddressBook|Displayed Contacts Successfully
+2020-10-19 08:40:22.1767|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-19 08:40:24.8516|WARN|Addressbook.AddressBook|Name sbc not present in addressbook
+2020-10-19 08:40:28.5632|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-19 08:40:36.9099|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.EditContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 130
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 39Index was outside the bounds of the array.
+2020-10-19 08:41:18.0174|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-19 08:41:30.9288|INFO|Addressbook.AddressBook|Added New contact abc def
+2020-10-19 08:41:32.3946|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-19 08:41:41.5770|ERROR|Addressbook.AddressBookMain|   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.RuntimeType.CheckValue(Object value, Binder binder, CultureInfo culture, BindingFlags invokeAttr)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   at Addressbook.Contact.set_Item(String propName, Object value) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Contact.cs:line 59
+   at Addressbook.AddressBook.EditContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 130
+   at Addressbook.AddressBookMain.UseAddressBook(AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 39Object of type 'System.Double' cannot be converted to type 'System.String'.
+2020-10-19 08:41:54.6472|INFO|Addressbook.AddressBookMain|Editing contacts
+2020-10-19 08:42:17.1475|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-19 08:42:17.1475|INFO|Addressbook.AddressBook|Displayed Contacts Successfully

@@ -16,7 +16,7 @@ namespace Addressbook
         Logger logger = LogManager.GetCurrentClassLogger();
 
         /// <summary>
-        /// Displays All Contact in the AdressBook
+        /// Displays All Contacts in the AdressBook
         /// </summary>
         public void DisplayAddressBook()
         {

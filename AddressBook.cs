@@ -100,8 +100,16 @@ namespace Addressbook
 
             addressBook.Add(contact);
 
-            Info.cityInfo[city].Add(contact); 
-            Info.stateInfo[state].Add(contact);
+            if (Info.cityInfo.ContainsKey(city))
+                Info.cityInfo[city].Add(contact);
+            else
+                Info.cityInfo.Add(city, new List<Contact>() { contact });
+
+
+            if (Info.stateInfo.ContainsKey(state))
+                Info.stateInfo[state].Add(contact);
+            else
+                Info.stateInfo.Add(state, new List<Contact>() { contact });
 
             Console.WriteLine("New Contact added successfully");
             logger.Info("Added New contact " + contact.firstName + " " + contact.lastName);

@@ -700,3 +700,90 @@
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
    at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
    at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 08:14:12.7731|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 08:14:43.7117|ERROR|Addressbook.AddressBookMain|   at CsvHelper.CsvParser.Read()
+   at CsvHelper.CsvReader.Read()
+   at CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 08:15:20.6077|ERROR|Addressbook.AddressBookMain|   at CsvHelper.CsvParser.Read()
+   at CsvHelper.CsvReader.Read()
+   at CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 08:17:46.1343|ERROR|Addressbook.AddressBookMain|   at CsvHelper.CsvParser.Read()
+   at CsvHelper.CsvReader.Read()
+   at CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 08:19:01.8700|ERROR|Addressbook.AddressBookMain|   at CsvHelper.CsvParser.Read()
+   at CsvHelper.CsvReader.Read()
+   at CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 08:19:05.0003|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 08:19:06.9938|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-27 08:21:07.6490|ERROR|Addressbook.AddressBookMain|   at CsvHelper.CsvParser.Read()
+   at CsvHelper.CsvReader.Read()
+   at CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
+   at Addressbook.AddressBookMain.UseAddressBook(String Name, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 14:20:02.6246|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:20:05.8084|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:20:14.4437|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:20:29.7591|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:20:36.8572|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:20:39.4716|ERROR|Addressbook.AddressBookMain|   at CsvHelper.CsvParser.Read()
+   at CsvHelper.CsvReader.Read()
+   at CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 14:23:29.7513|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:23:39.4631|ERROR|Addressbook.AddressBookMain|   at CsvHelper.CsvParser.Read()
+   at CsvHelper.CsvReader.Read()
+   at CsvHelper.CsvReader.<GetRecords>d__63`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Addressbook.FileIO.LoadFromCSV(String path) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\FileIO.cs:line 55
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 86An unexpected error occurred.
+2020-10-27 14:27:59.9418|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:28:12.9832|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:29:37.0389|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:29:45.9016|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:33:06.0101|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:33:10.0983|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:33:14.1315|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-27 14:33:55.1033|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:33:56.8046|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:34:15.2447|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:34:17.3781|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:34:28.3810|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:34:29.9809|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:34:36.2293|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:34:38.0167|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-27 14:35:31.6461|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:35:36.6547|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-27 14:35:47.7374|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 62
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 40City Name should only contain alphabets
+2020-10-27 14:35:49.7842|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:35:51.6630|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-10-27 14:37:45.0715|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:37:47.3164|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-27 14:38:32.8373|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:38:44.2396|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-10-27 14:39:40.3621|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:39:52.7849|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-10-27 14:40:03.9804|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-10-27 14:40:10.4606|INFO|Addressbook.AddressBookMain|Exiting Program

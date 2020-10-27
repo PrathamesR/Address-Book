@@ -7,38 +7,6 @@ using System.Reflection;
 
 namespace Addressbook
 {
-    public class NameComparer : IComparer<Contact>
-    {
-        public int Compare(Contact x, Contact y)
-        {
-            return string.Compare(x.FirstName + x.LastName, y.FirstName + y.LastName);
-        }
-    }
-
-    public class CityComparer : IComparer<Contact>
-    {
-        public int Compare(Contact x, Contact y)
-        {
-            return string.Compare(x.City, y.City);
-        }
-    }
-
-    public class StateComparer : IComparer<Contact>
-    {
-        public int Compare(Contact x, Contact y)
-        {
-            return string.Compare(x.state, y.state);
-        }
-    }
-
-    public class ZipComparer : IComparer<Contact>
-    {
-        public int Compare(Contact x, Contact y)
-        {
-            return string.Compare(x.Zip,y.Zip);
-        }
-    }
-
     [Serializable]
     public class Contact
     {
@@ -92,6 +60,39 @@ namespace Addressbook
         public void DisplayContact()
         {
             Console.WriteLine(ToString());
+        }
+    }
+
+
+    public class NameComparer : IComparer<Contact>
+    {
+        public int Compare(Contact x, Contact y)
+        {
+            return string.Compare(x.FirstName + x.LastName, y.FirstName + y.LastName);
+        }
+    }
+
+    public class CityComparer : IComparer<Contact>
+    {
+        public int Compare(Contact x, Contact y)
+        {
+            return string.Compare(x.City, y.City);
+        }
+    }
+
+    public class StateComparer : IComparer<Contact>
+    {
+        public int Compare(Contact x, Contact y)
+        {
+            return string.Compare(x.state, y.state);
+        }
+    }
+
+    public class ZipComparer : IComparer<Contact>
+    {
+        public int Compare(Contact x, Contact y)
+        {
+            return string.Compare(x.Zip,y.Zip);
         }
     }
 }

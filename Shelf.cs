@@ -27,9 +27,9 @@ namespace Addressbook
             shelf.Add(addressBookName, addressBook);
         }
 
-        public void ReplaceAddressBook(string addressBookName,AddressBook addressBook)
+        public void ReplaceAddressBook(string addressBookName,List<Contact> records)
         {
-            shelf[addressBookName] = addressBook;
+            shelf[addressBookName].addressBook = records;
         }
 
         public AddressBook GetAddressBook(string name)

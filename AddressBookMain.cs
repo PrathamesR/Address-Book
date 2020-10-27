@@ -16,7 +16,7 @@ namespace Addressbook
         static string csvPath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv";
         static string jsonPath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Shelf.json";
 
-        public static void UseAddressBook(string Name,AddressBook addressbook)
+        public static void UseAddressBook(string bookName,AddressBook addressbook)
         {
             Logger nlog = LogManager.GetCurrentClassLogger();
 
@@ -82,9 +82,8 @@ namespace Addressbook
                     }
                     else if (choice == 7)
                     {
-                        AddressBook Obj = new AddressBook();
-                        Obj.addressBook = FileIO.LoadFromCSV(csvPath);
-                        shelf.ReplaceAddressBook(Name, Obj);
+                        List<Contact> records = FileIO.LoadFromCSV(csvPath);
+                        shelf.ReplaceAddressBook(bookName, records);
                         Console.WriteLine("Loaded Data from " + csvPath);
                     }
                     else if (choice == 8)

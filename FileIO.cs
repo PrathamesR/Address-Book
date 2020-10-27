@@ -51,7 +51,6 @@ namespace Addressbook
             using (StreamReader reader = new StreamReader(path))
             using (CsvReader csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
-                reader.Close();
                 List<Contact> list = csv.GetRecords<Contact>().ToList();
                 return list;
             }

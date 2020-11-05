@@ -787,3 +787,8 @@
 2020-10-27 14:39:52.7849|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-10-27 14:40:03.9804|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-10-27 14:40:10.4606|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-06 02:38:57.5054|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 02:40:06.9775|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 02:40:19.3527|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 02:40:27.9757|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 02:40:44.2899|INFO|Addressbook.AddressBookMain|Displaying contacts

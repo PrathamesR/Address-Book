@@ -27,7 +27,7 @@ namespace Addressbook
                 try
                 {
                     Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact" +
-                        "\n5. Order this Address Book\n6. Save To CSV \n7. Load from CSV\n8. Close Address Book");
+                        "\n5. Order this Address Book\n6. Save To CSV \n7. Load from CSV\n8.Load from DB\n9. Close Address Book");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -87,6 +87,12 @@ namespace Addressbook
                         Console.WriteLine("Loaded Data from " + csvPath);
                     }
                     else if (choice == 8)
+                    {
+                        List<Contact> records = DBOperations.LoadFromDB();
+                        shelf.ReplaceAddressBook(bookName, records);
+                        Console.WriteLine("Loaded Data from Database");
+                    }
+                    else if (choice == 9)
                     {
                         nlog.Info("Changing Address Book");
                         flag = false;

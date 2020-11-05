@@ -36,6 +36,7 @@
     <Compile Include="AddressBook.cs" />
     <Compile Include="AddressBookMain.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="DBOperations.cs" />
     <Compile Include="FileIO.cs" />
     <Compile Include="Info.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

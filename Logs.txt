@@ -792,3 +792,15 @@
 2020-11-06 02:40:19.3527|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-11-06 02:40:27.9757|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-11-06 02:40:44.2899|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:13:37.5042|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-06 03:13:52.1272|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:14:02.1536|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:15:07.0881|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:15:13.0494|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:15:36.6533|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:16:22.3684|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:16:25.7987|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-11-06 03:18:16.2937|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:18:48.7401|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-06 03:19:06.3226|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-11-06 03:19:24.7479|INFO|Addressbook.AddressBookMain|Exiting Program

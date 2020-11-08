@@ -234,5 +234,45 @@ namespace Addressbook
                 connection.Close();
             }
         }
+
+        public static bool AddMultipleContacts(List<Contact> contacts)
+        {
+            SqlConnection connection = null;
+            try
+            {
+                connection = new SqlConnection(@"Data Source='(LocalDB)\MSSQL Server';Initial Catalog=AddressBook;Integrated Security=True");
+                using (connection)
+                {
+                    foreach (Contact contact in contacts)
+                    {
+                        connection.Open();
+                        Contact employee = new Contact();
+                        SqlCommand command = new SqlCommand("CreateNewContact", connection);
+                        command.CommandType = System.Data.CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@firstName", contact.FirstName);
+                        command.Parameters.AddWithValue("@lastName", contact.LastName);
+                        command.Parameters.AddWithValue("@address", contact.Address);
+                        command.Parameters.AddWithValue("@city", contact.City);
+                        command.Parameters.AddWithValue("@state", contact.state);
+                        command.Parameters.AddWithValue("@zip", decimal.Parse(contact.Zip));
+                        command.Parameters.AddWithValue("@phoneNumber", decimal.Parse(contact.PhoneNo));
+                        command.Parameters.AddWithValue("@email", contact.Email);
+
+                        SqlDataReader dr = command.ExecuteReader();
+                        connection.Close();
+                    }
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
     }
 }

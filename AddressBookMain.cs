@@ -16,7 +16,7 @@ namespace Addressbook
         static string csvPath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Address Book.csv";
         static string jsonPath = @"D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\Shelf.json";
 
-        public static void UseAddressBook(string bookName,AddressBook addressbook)
+        public static void UseAddressBook(string bookName, AddressBook addressbook)
         {
             Logger nlog = LogManager.GetCurrentClassLogger();
 
@@ -28,7 +28,7 @@ namespace Addressbook
                 {
                     Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact" +
                         "\n5. Order this Address Book\n6. Save To CSV \n7. Load from CSV\n8. Load from DB\n9. Update DB Data\n10. Load Between Date" +
-                        "\n11. Get Count By City"+ "\n12. Get Count By State"+"\n13. Close Address Book");
+                        "\n11. Get Count By City" + "\n12. Get Count By State" + "\n14. Add Contacts to DB\n15. Close Address Book");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -54,9 +54,10 @@ namespace Addressbook
                     {
                         Console.WriteLine("\n1.Name\n2.City\n3.State\n4.ZIP");
                         int orderChoice = int.Parse(Console.ReadLine());
-                        switch(orderChoice)
+                        switch (orderChoice)
                         {
-                            case 1: addressbook.addressBook.Sort(new NameComparer());
+                            case 1:
+                                addressbook.addressBook.Sort(new NameComparer());
                                 Console.WriteLine("Sorted Successfully By Name");
                                 break;
                             case 2:
@@ -78,8 +79,8 @@ namespace Addressbook
                     }
                     else if (choice == 6)
                     {
-                        FileIO.SaveToCSV(addressbook,csvPath);
-                        Console.WriteLine("Stored Data at "+csvPath);
+                        FileIO.SaveToCSV(addressbook, csvPath);
+                        Console.WriteLine("Stored Data at " + csvPath);
                     }
                     else if (choice == 7)
                     {
@@ -105,7 +106,7 @@ namespace Addressbook
                         String startDate = Console.ReadLine();
                         Console.Write("Enter End Date(YYYY-MM-DD): ");
                         String endDate = Console.ReadLine();
-                        DBOperations.GetEmployeesByDate(startDate,endDate);
+                        DBOperations.GetEmployeesByDate(startDate, endDate);
                     }
                     else if (choice == 11)
                     {
@@ -117,7 +118,32 @@ namespace Addressbook
                         Console.Write("Enter State Name: ");
                         DBOperations.GetCountByState(Console.ReadLine());
                     }
-                    else if (choice == 11)
+                    else if (choice == 13)
+                    {
+                        Console.Write("Enter State Name: ");
+                        DBOperations.GetCountByState(Console.ReadLine());
+                    }
+                    else if (choice == 14)
+                    {
+                        bool addMore = true;
+                        List<Contact> contacts = new List<Contact>();
+                        while (addMore)
+                        {
+                            Console.WriteLine("Enter First Name, Last Name, Address, City, State, Zip, PhoneNo, email");
+                            Contact contact = new Contact(Console.ReadLine(), Console.ReadLine(), Console.ReadLine(), Console.ReadLine(), Console.ReadLine(),
+                                Console.ReadLine(), Console.ReadLine(), Console.ReadLine());
+                            contacts.Add(contact);
+
+                            Console.Write("Add another contact? (Y/N):");
+                            if (Console.ReadLine() == "N")
+                                addMore = false;                            
+                        }
+                        if (DBOperations.AddMultipleContacts(contacts))
+                            Console.WriteLine("Succesfully Added contacts to DB");
+                        else
+                            Console.WriteLine("Couldn't Add Contacts to DB");
+                    }
+                    else if (choice == 15)
                     {
                         nlog.Info("Changing Address Book");
                         flag = false;
@@ -130,11 +156,10 @@ namespace Addressbook
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Invalid data entered. Error: " + e.Message +"\n" + e.StackTrace);
+                    Console.WriteLine("Invalid data entered. Error: " + e.Message + "\n" + e.StackTrace);
                     nlog.Error(e.StackTrace + e.Message);
                 }
             }
-
         }
 
         static void Main(string[] args)

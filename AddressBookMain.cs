@@ -27,7 +27,7 @@ namespace Addressbook
                 try
                 {
                     Console.WriteLine("\n1. Display All Contacts\n2. Add New Contact\n3. Edit a Contact\n4. Delete a Contact" +
-                        "\n5. Order this Address Book\n6. Save To CSV \n7. Load from CSV\n8. Load from DB\n9. Update DB Data\n10. Close Address Book");
+                        "\n5. Order this Address Book\n6. Save To CSV \n7. Load from CSV\n8. Load from DB\n9. Update DB Data\n10. Load Between Date\n11. Close Address Book");
                     choice = int.Parse(Console.ReadLine());
                     if (choice == 1)
                     {
@@ -100,6 +100,14 @@ namespace Addressbook
                     }
                     else if (choice == 10)
                     {
+                        Console.Write("Enter Start Date(YYYY-MM-DD): ");
+                        String startDate = Console.ReadLine();
+                        Console.Write("Enter End Date(YYYY-MM-DD): ");
+                        String endDate = Console.ReadLine();
+                        DBOperations.GetEmployeesByDate(startDate,endDate);
+                    }
+                    else if (choice == 11)
+                    {
                         nlog.Info("Changing Address Book");
                         flag = false;
                     }
@@ -120,6 +128,8 @@ namespace Addressbook
 
         static void Main(string[] args)
         {
+
+            Console.WriteLine(DateTime.Now);
             FileIO.LoadFromTxt(savePath);
 
             Logger nlog = LogManager.GetCurrentClassLogger();

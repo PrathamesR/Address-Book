@@ -145,7 +145,6 @@ namespace Addressbook
                 else if (choice == 5) 
                     Info.stateInfo[exitingVal][Info.stateInfo[exitingVal].IndexOf(contact)].state = newValue;
 
-
                 Console.WriteLine(properties[choice] + " edited succesfully");
             }
             else

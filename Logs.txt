@@ -823,3 +823,84 @@
 2020-11-09 01:16:07.3209|INFO|Addressbook.AddressBookMain|Exiting Program
 2020-11-09 02:52:23.4693|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-11-09 02:52:26.0501|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-09 04:51:35.2580|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-09 04:52:50.0157|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 04:53:01.6892|ERROR|Addressbook.AddressBookMain|   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Addressbook.JsonServerOperations.ReadEntries() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\JsonServerOperations.cs:line 19
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 149Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Addressbook.Contact]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 1, position 2.
+2020-11-09 04:53:58.3339|ERROR|Addressbook.AddressBookMain|   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Addressbook.JsonServerOperations.ReadEntries() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\JsonServerOperations.cs:line 19
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 149Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Addressbook.Contact]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 1, position 2.
+2020-11-09 04:55:07.5942|ERROR|Addressbook.AddressBookMain|   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Addressbook.JsonServerOperations.ReadEntries() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\JsonServerOperations.cs:line 19
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 149Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Addressbook.Contact]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 1, position 2.
+2020-11-09 04:56:04.2960|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:00:14.0767|ERROR|Addressbook.AddressBookMain|   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Addressbook.JsonServerOperations.ReadEntries() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\JsonServerOperations.cs:line 19
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 149Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Addressbook.Contact]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 1, position 2.
+2020-11-09 05:00:57.1241|ERROR|Addressbook.AddressBookMain|   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Addressbook.JsonServerOperations.ReadEntries() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\JsonServerOperations.cs:line 19
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 149Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Addressbook.Contact]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 1, position 2.
+2020-11-09 05:02:12.4466|ERROR|Addressbook.AddressBookMain|   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at Addressbook.JsonServerOperations.ReadEntries() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\JsonServerOperations.cs:line 19
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 149Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[Addressbook.Contact]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 1, position 2.
+2020-11-09 05:05:29.3046|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:05:29.3656|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.DisplayAddressBook() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 22
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 37Object reference not set to an instance of an object.
+2020-11-09 05:05:51.0052|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:07:37.7819|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:07:51.5217|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:07:51.5217|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.DisplayAddressBook() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 22
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 37Object reference not set to an instance of an object.
+2020-11-09 05:08:07.5794|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-11-09 05:08:11.0950|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 45
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 42Name should only contain alphabets
+2020-11-09 05:14:30.5080|INFO|Addressbook.AddressBookMain|Displaying contacts

@@ -102,7 +102,7 @@ namespace Addressbook
             }
         }
 
-        public static List<Contact> GetEmployeesByDate(string startDate,string endDate)
+        public static List<Contact> GetEmployeesByDate(string startDate, string endDate)
         {
             List<Contact> book = null;
             SqlConnection connection = null;
@@ -113,7 +113,7 @@ namespace Addressbook
                 Contact employee = new Contact();
                 using (connection)
                 {
-                    string query = @"SELECT * FROM AddressBook where date_added between ('"+ startDate + "') and ('" + endDate + "')";
+                    string query = @"SELECT * FROM AddressBook where date_added between ('" + startDate + "') and ('" + endDate + "')";
 
                     SqlCommand cmd = new SqlCommand(query, connection);
                     connection.Open();
@@ -125,7 +125,7 @@ namespace Addressbook
                     //Check if there are records
                     if (dataReader.HasRows)
                     {
-                        Console.WriteLine("\nContacts added between " + startDate + " and " + endDate+" are-");
+                        Console.WriteLine("\nContacts added between " + startDate + " and " + endDate + " are-");
                         while (dataReader.Read())
                         {
                             Contact contact = new Contact(dataReader.GetString(0), dataReader.GetString(1), dataReader.GetString(2), dataReader.GetString(3), dataReader.GetString(4), dataReader.GetDecimal(5).ToString(), dataReader.GetDecimal(6).ToString(), dataReader.GetString(7));
@@ -142,6 +142,92 @@ namespace Addressbook
             {
                 Console.WriteLine(e.Message + e.StackTrace);
                 return book;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public static int GetCountByCity(string city)
+        {
+            SqlConnection connection = null;
+            int count = 0;
+
+            try
+            {
+                connection = new SqlConnection(@"Data Source='(LocalDB)\MSSQL Server';Initial Catalog=AddressBook;Integrated Security=True");
+                Contact employee = new Contact();
+                using (connection)
+                {
+                    string query = @"SELECT count(firstName) FROM AddressBook where city='" + city + "';";
+
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    connection.Open();
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    //Check if there are records
+                    if (dataReader.HasRows)
+                    {
+                        if (dataReader.Read())
+                        {
+                            count = dataReader.GetInt32(0);
+                            Console.WriteLine("There are " + count + " contacts in " + city + " City");
+                        }
+                    }
+                    else
+                        Console.WriteLine("Has no data");
+                }
+                return count;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message + e.StackTrace);
+                return count;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+        public static int GetCountByState(string state)
+        {
+            SqlConnection connection = null;
+            int count = 0;
+
+            try
+            {
+                connection = new SqlConnection(@"Data Source='(LocalDB)\MSSQL Server';Initial Catalog=AddressBook;Integrated Security=True");
+                Contact employee = new Contact();
+                using (connection)
+                {
+                    string query = @"SELECT count(firstName) FROM AddressBook where state='" + state + "';";
+
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    connection.Open();
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    //Check if there are records
+                    if (dataReader.HasRows)
+                    {
+                        if (dataReader.Read())
+                        {
+                            count = dataReader.GetInt32(0);
+                            Console.WriteLine("There are " + count + " contacts in " + state);
+                        }
+                    }
+                    else
+                        Console.WriteLine("Has no data");
+                }
+                return count;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message + e.StackTrace);
+                return count;
             }
             finally
             {

@@ -821,3 +821,5 @@
 2020-11-09 01:15:53.6836|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-11-09 01:16:06.0139|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-11-09 01:16:07.3209|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-09 02:52:23.4693|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-11-09 02:52:26.0501|INFO|Addressbook.AddressBookMain|Exiting Program

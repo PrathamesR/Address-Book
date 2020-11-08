@@ -243,8 +243,7 @@ namespace Addressbook
                 connection = new SqlConnection(@"Data Source='(LocalDB)\MSSQL Server';Initial Catalog=AddressBook;Integrated Security=True");
                 using (connection)
                 {
-                    foreach (Contact contact in contacts)
-                    {
+                    Parallel.ForEach(contacts, contact => {
                         connection.Open();
                         Contact employee = new Contact();
                         SqlCommand command = new SqlCommand("CreateNewContact", connection);
@@ -260,7 +259,7 @@ namespace Addressbook
 
                         SqlDataReader dr = command.ExecuteReader();
                         connection.Close();
-                    }
+                    });
                 }
                 return true;
             }

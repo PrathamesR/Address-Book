@@ -62,7 +62,7 @@ namespace Addressbook
             List<Contact> contacts = ReadEntries();
 
             int i = 0;
-            foreach(var contact in contacts)
+            foreach (var contact in contacts)
             {
                 i++;
                 if (contact.FirstName.Equals(name))
@@ -78,14 +78,41 @@ namespace Addressbook
 
             try
             {
-                RestRequest request = new RestRequest("/addressBook/"+i, Method.PATCH);
+                RestRequest request = new RestRequest("/addressBook/" + i, Method.PATCH);
                 JObject JsonContact = new JObject();
-                JsonContact.Add(properties[choice-1], value);
+                JsonContact.Add(properties[choice - 1], value);
 
                 request.AddParameter("application/json", JsonContact, ParameterType.RequestBody);
 
                 IRestResponse response = client.Execute(request);
 
+                Console.WriteLine(response.StatusCode);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+        }
+        public static bool DeleteContact()
+        {
+            Console.Write("\nEnter the name of the contact to delete: ");
+            string name = Console.ReadLine();
+            List<Contact> contacts = ReadEntries();
+
+            int i = 0;
+            foreach (var contact in contacts)
+            {
+                i++;
+                if (contact.FirstName.Equals(name))
+                    break;
+            }
+
+            try
+            {
+                RestRequest request = new RestRequest("/addressBook/" + i, Method.DELETE);
+                IRestResponse response = client.Execute(request);
                 Console.WriteLine(response.StatusCode);
                 return true;
             }

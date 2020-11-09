@@ -937,3 +937,6 @@ Path '', line 1, position 2.
 2020-11-09 06:22:05.1709|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-11-09 06:22:15.2220|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-11-09 06:22:18.0195|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-09 06:33:53.1698|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-11-09 06:33:54.7982|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-09 06:35:09.3710|INFO|Addressbook.AddressBookMain|Exiting Program

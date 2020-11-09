@@ -10,17 +10,6 @@
       "PhoneNumber": "1234567890",
       "Email": "abc@gmail.com",
       "id": 1
-    },
-    {
-      "FirstName": "abc",
-      "LastName": "ABC",
-      "Address": "afsd",
-      "City": "xcvse",
-      "state": "fjsdko",
-      "Zip": "111111",
-      "PhoneNumber": "1231231230",
-      "Email": "one@abc.com",
-      "id": 2
     }
   ]
 }

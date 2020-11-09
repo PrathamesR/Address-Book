@@ -1,34 +1,26 @@
 {
   "addressBook": [
     {
-      "FirstName": "ABC",
-      "LastName": "BCD",
-      "Address": "EFG",
-      "City": "HIJ",
-      "state": "Maharashtra",
-      "Zip": "456456  ",
-      "PhoneNo": "789456123",
-      "Email": "abc@outlook.com"
+      "FirstName": "Prathamesh",
+      "LastName": "Rajput",
+      "Address": "Home",
+      "City": "MyCity",
+      "state": "MyState",
+      "Zip": "123456",
+      "PhoneNumber": "1234567890",
+      "Email": "abc@gmail.com",
+      "id": 1
     },
     {
-      "FirstName": "Barack",
-      "LastName": "Obama",
-      "Address": "Us",
-      "City": "kopri",
-      "state": "chattisgarh",
-      "Zip": "789456",
-      "PhoneNo": "1594826370",
-      "Email": "barak.obama@example.com"
-    },
-    {
-      "FirstName": "Sachin",
-      "LastName": "Tendulkar",
-      "Address": "India",
-      "City": "Mumbai",
-      "state": "Maharashtra",
-      "Zip": "456789",
-      "PhoneNo": "+91 9999999998",
-      "Email": "sachin@example.com"
+      "FirstName": "abc",
+      "LastName": "ABC",
+      "Address": "afsd",
+      "City": "xcvse",
+      "state": "fjsdko",
+      "Zip": "111111",
+      "PhoneNumber": "1111122222",
+      "Email": "one@abc.com",
+      "id": 2
     }
   ]
 }

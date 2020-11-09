@@ -904,3 +904,19 @@ Path '', line 1, position 2.
 2020-11-09 05:08:11.0950|ERROR|Addressbook.AddressBookMain|   at Addressbook.AddressBook.AddNewContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBook.cs:line 45
    at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 42Name should only contain alphabets
 2020-11-09 05:14:30.5080|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:31:39.3563|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:31:46.5325|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:32:33.6503|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:32:35.9614|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:34:26.2350|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:34:33.4353|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:35:10.1638|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:37:43.7890|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:39:43.0117|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:45:25.4968|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:45:34.3567|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:46:05.2426|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:47:06.2446|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:56:34.8934|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 05:56:38.5165|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-11-09 05:56:40.7642|INFO|Addressbook.AddressBookMain|Exiting Program

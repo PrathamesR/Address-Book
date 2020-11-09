@@ -33,7 +33,7 @@ namespace Addressbook
                     JObject JsonContact = new JObject();
                     JsonContact.Add("FirstName", contact.FirstName);
                     JsonContact.Add("LastName", contact.LastName);
-                    JsonContact.Add("Address",contact.Address);
+                    JsonContact.Add("Address", contact.Address);
                     JsonContact.Add("City", contact.City);
                     JsonContact.Add("state", contact.state);
                     JsonContact.Add("Zip", contact.Zip);
@@ -48,7 +48,48 @@ namespace Addressbook
                 }
                 return true;
             }
-            catch(Exception e)
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+        }
+
+        public static bool UpdateContact()
+        {
+            Console.Write("\nEnter the name of the contact to edit: ");
+            string name = Console.ReadLine();
+            List<Contact> contacts = ReadEntries();
+
+            int i = 0;
+            foreach(var contact in contacts)
+            {
+                i++;
+                if (contact.FirstName.Equals(name))
+                    break;
+            }
+
+            Console.WriteLine("Select The property to edit");
+            Console.WriteLine("1.First Name\n2.Last Name\n3.Address\n4.City\n5.State\n6.ZIP Code\n7.Phone Number\n8.Email Address");
+            string[] properties = { "FirstName", "LastName", "Address", "City", "state", "Zip", "PhoneNumber", "Email" };
+            int choice = int.Parse(Console.ReadLine());
+            Console.Write("Enter New Value: ");
+            string value = Console.ReadLine();
+
+            try
+            {
+                RestRequest request = new RestRequest("/addressBook/"+i, Method.PATCH);
+                JObject JsonContact = new JObject();
+                JsonContact.Add(properties[choice-1], value);
+
+                request.AddParameter("application/json", JsonContact, ParameterType.RequestBody);
+
+                IRestResponse response = client.Execute(request);
+
+                Console.WriteLine(response.StatusCode);
+                return true;
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 return false;

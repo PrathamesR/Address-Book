@@ -920,3 +920,20 @@ Path '', line 1, position 2.
 2020-11-09 05:56:34.8934|INFO|Addressbook.AddressBookMain|Displaying contacts
 2020-11-09 05:56:38.5165|INFO|Addressbook.AddressBookMain|Changing Address Book
 2020-11-09 05:56:40.7642|INFO|Addressbook.AddressBookMain|Exiting Program
+2020-11-09 06:09:14.9569|ERROR|Addressbook.AddressBookMain|   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Addressbook.JsonServerOperations.UpdateContact() in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\JsonServerOperations.cs:line 65
+   at Addressbook.AddressBookMain.UseAddressBook(String bookName, AddressBook addressbook) in D:\Capgemini\BridgeLabs Lectures\Week2\Addressbook\AddressBookMain.cs:line 175Input string was not in a correct format.
+2020-11-09 06:09:16.7253|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:09:26.7942|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:10:00.9162|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:17:55.3077|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:18:14.7846|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:19:54.7215|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:20:04.7033|INFO|Addressbook.AddressBookMain|Adding new contact
+2020-11-09 06:20:32.1882|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:21:08.3210|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:22:05.1709|INFO|Addressbook.AddressBookMain|Displaying contacts
+2020-11-09 06:22:15.2220|INFO|Addressbook.AddressBookMain|Changing Address Book
+2020-11-09 06:22:18.0195|INFO|Addressbook.AddressBookMain|Exiting Program
